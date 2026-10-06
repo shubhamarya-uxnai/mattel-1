@@ -1,0 +1,68 @@
+Foreground token,Background token,Minimum,Kind,Lowest ratio today (12 combinations)
+Information/Primary,Background/Page,4.5,text,11.69
+Information/Primary,Background/Card,4.5,text,13.54
+Information/Primary,Layer/Layer 1,4.5,text,13.54
+Information/Primary,Layer/Layer 2,4.5,text,11.69
+Information/Primary,Layer/Layer 3,4.5,text,1.17
+Information/Heading,Background/Card,4.5,text,15.85
+Information/Secondary,Background/Card,4.5,text,9.96
+Information/Tertiary,Background/Card,4.5,text,8.6
+Information/Muted,Background/Card,4.5,text,7.33
+Information/Link,Background/Card,4.5,text,6.31
+Information/Disabled,Background/Card,,"exempt, report only",4.63
+Information/On-Highlighted,Layer/Highlighted/Default,4.5,text,4.65
+Atoms/Button/Primary/Fill/Text,Atoms/Button/Primary/Fill/Fill,4.5,text,6.31
+Atoms/Button/Primary/Fill/Text-Hover,Atoms/Button/Primary/Fill/Fill-Hover,4.5,text,8.57
+Atoms/Button/Primary/Ghost/Text,Atoms/Button/Primary/Ghost/Fill,4.5,text,6.31
+Atoms/Button/Primary/Ghost/Text-Hover,Atoms/Button/Primary/Ghost/Fill-Hover,4.5,text,4.67
+Atoms/Button/Secondary/Fill/Text,Atoms/Button/Secondary/Fill/Fill,4.5,text,6.28
+Atoms/Button/Secondary/Fill/Text-Hover,Atoms/Button/Secondary/Fill/Fill-Hover,4.5,text,8.59
+Atoms/Button/Secondary/Ghost/Text,Atoms/Button/Secondary/Ghost/Fill,4.5,text,6.28
+Atoms/Button/Secondary/Ghost/Text-Hover,Atoms/Button/Secondary/Ghost/Fill-Hover,4.5,text,4.67
+Atoms/Button/Neutral/Fill/Text,Atoms/Button/Neutral/Fill/Fill,4.5,text,6.31
+Atoms/Button/Neutral/Fill/Text-Hover,Atoms/Button/Neutral/Fill/Fill-Hover,4.5,text,8.6
+Atoms/Button/Neutral/Ghost/Text,Atoms/Button/Neutral/Ghost/Fill,4.5,text,6.31
+Atoms/Button/Neutral/Ghost/Text-Hover,Atoms/Button/Neutral/Ghost/Fill-Hover,4.5,text,4.65
+Atoms/Button/Primary/Ghost/Border,Background/Card,3.0,non-text,4.65
+Atoms/Button/Primary/Ghost/Border,Background/Page,3.0,non-text,3.98
+Atoms/Chip/Primary/Fill/Text,Atoms/Chip/Primary/Fill/Fill,4.5,text,6.31
+Atoms/Chip/Primary/Ghost/Text,Atoms/Chip/Primary/Ghost/Fill,4.5,text,4.67
+Atoms/Chip/Success/Fill/Text,Atoms/Chip/Success/Fill/Fill,4.5,text,6.29
+Atoms/Chip/Success/Ghost/Text,Atoms/Chip/Success/Ghost/Fill,4.5,text,8.61
+Atoms/Chip/Error/Fill/Text,Atoms/Chip/Error/Fill/Fill,4.5,text,6.28
+Atoms/Chip/Error/Ghost/Text,Atoms/Chip/Error/Ghost/Fill,4.5,text,8.6
+Atoms/Input Field/Text/Enabled,Atoms/Input Field/Default,4.5,text,13.54
+Atoms/Input Field/Border,Atoms/Input Field/Default,3.0,non-text,4.63
+Atoms/Input Field/Error,Atoms/Input Field/Default,3.0,non-text,6.28
+Atoms/Input Field/Text/Disabled,Atoms/Input Field/Disabled,,"exempt, report only",3.4
+Atoms/Radio & Check/Border,Atoms/Radio & Check/Fill,3.0,non-text,4.63
+Atoms/Radio & Check/Selected Fill,Background/Card,3.0,non-text,6.31
+Atoms/Radio & Check/Text,Background/Card,4.5,text,13.54
+Border/Default,Background/Card,3.0,non-text,4.63
+Border/Strong,Background/Card,3.0,non-text,7.33
+Border/Subtle,Background/Card,,"exempt, report only",2.16
+Border/Focus,Background/Card,3.0,non-text,6.31
+Status/Error,Background/Card,3.0,non-text,6.28
+Status/Success,Background/Card,3.0,non-text,6.29
+Status/Warning,Background/Card,3.0,non-text,6.29
+Status/Info,Background/Card,3.0,non-text,6.32
+Chart/Primary,Background/Card,3.0,non-text,6.31
+Chart/Secondary,Background/Card,3.0,non-text,6.28
+Chart/Tertiary,Background/Card,3.0,non-text,6.32
+Chart/Accent,Background/Card,3.0,non-text,6.29
+Chart/Bar-Dark,Background/Card,3.0,non-text,8.57
+Chart/Bar-Medium,Background/Card,3.0,non-text,4.65
+Chart/Label,Background/Card,4.5,text,7.33
+Chart/Grid-Line,Background/Card,,"exempt, report only",1.59
+Sidebar/Tab/Active-Text,Sidebar/Tab/Active,4.5,text,4.67
+Sidebar/Tab/Inactive-Text,Sidebar/Background,4.5,text,6.33
+Sidebar/Text-Active,Sidebar/Background,4.5,text,7.4
+Card-Stat/Title,Card-Stat/Background,4.5,text,7.33
+Card-Stat/Value,Card-Stat/Background,4.5,text,15.85
+Card-Stat/Change-Positive,Card-Stat/Background,4.5,text,6.29
+Card-Stat/Change-Negative,Card-Stat/Background,4.5,text,6.28
+Card-Stat/Icon,Card-Stat/Icon-BG,3.0,non-text,3.41
+Search/Placeholder,Search/Background,4.5,text,6.28
+Search/Icon,Search/Background,3.0,non-text,6.28
+Search/Border,Search/Background,3.0,non-text,3.97
+Notification/Badge-Text,Notification/Badge,4.5,text,6.28

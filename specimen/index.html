@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Design system specimen</title>
+<link rel="stylesheet" href="../dist/tokens.css" />
+<link rel="stylesheet" href="../dist/type.css" />
+<link rel="stylesheet" href="../dist/components.css" />
+<link rel="stylesheet" href="../dist/shadcn.css" />
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { font-family: ui-sans-serif, system-ui, sans-serif; color: #1a1a1a; background: #f2f2f2; line-height: 1.5; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 24px 20px 100px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 48px 0 12px; border-top: 1px solid #ddd; padding-top: 24px; }
+  h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: #666; margin: 20px 0 8px; }
+  .intro { color: #555; font-size: 14px; margin: 0 0 20px; max-width: 70em; }
+  .panel { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 16px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; }
+  .controls label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #444; }
+  .controls select { font-size: 13px; padding: 4px 6px; }
+  .stage-frame { margin-top: 16px; padding: 24px; background: repeating-conic-gradient(#eee 0% 25%, #fafafa 0% 50%) 50% / 16px 16px; border-radius: 10px; }
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+  .swatch { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #fff; font-size: 11px; }
+  .swatch-color { height: 40px; }
+  .swatch-label { padding: 6px 8px; word-break: break-all; }
+  .swatch-label code { font-size: 10px; color: #666; }
+  table.token-table { border-collapse: collapse; width: 100%; font-size: 12px; }
+  table.token-table th, table.token-table td { text-align: left; padding: 4px 8px; border-bottom: 1px solid #eee; }
+  table.token-table th { color: #666; }
+  .type-row { display: grid; grid-template-columns: 220px 1fr; gap: 16px; padding: 10px 0; border-bottom: 1px solid #eee; align-items: baseline; }
+  .type-row .meta { font-size: 11px; color: #888; }
+  .type-row .meta code { display: block; }
+  .atom-grid { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+  .atom-cell { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 12px; background: #fff; border: 1px solid #eee; border-radius: 8px; }
+  .atom-cell .cell-label { font-size: 10px; color: #888; }
+  .field-demo { width: 260px; }
+  .radio-demo, .checkbox-demo { display: flex; flex-direction: column; gap: 6px; }
+  .nest { border: 1px dashed #999; border-radius: 10px; padding: 16px; margin-top: 12px; }
+  .nest > .nest-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: #666; margin-bottom: 10px; display: block; }
+  .nest-color { padding: 20px; border-radius: 10px; background-color: var(--ds-color-background-card); }
+  .shadcn-card { max-width: 320px; padding: 20px; border-radius: calc(var(--radius) * 1px); background: var(--card); color: var(--card-foreground); border: 1px solid var(--border); }
+  .shadcn-card h4 { margin: 0 0 8px; color: var(--foreground); }
+  .shadcn-card .btn { display: inline-flex; align-items: center; padding: 8px 16px; border-radius: calc(var(--radius) * 1px); background: var(--primary); color: var(--primary-foreground); border: none; font: inherit; cursor: pointer; margin-top: 12px; }
+  .shadcn-card .btn:hover { background: var(--primary-hover); }
+  .results-summary { font-size: 15px; font-weight: 600; margin: 0 0 8px; }
+  .results-summary.pass { color: #0a7a2f; }
+  .results-summary.fail { color: #b3261e; }
+  .results-summary.known { color: #9a6b00; }
+  table.results { border-collapse: collapse; width: 100%; font-size: 12px; margin-top: 8px; }
+  table.results th, table.results td { text-align: left; padding: 4px 8px; border-bottom: 1px solid #eee; }
+  tr.fail td { background: #fdecea; }
+  tr.known td { background: #fff8e1; }
+  .badge { display: inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+  .badge.pass { background: #e3f6e8; color: #0a7a2f; }
+  .badge.fail { background: #fdecea; color: #b3261e; }
+  .badge.known { background: #fff3cd; color: #9a6b00; }
+  button.run { font-size: 13px; padding: 8px 14px; border-radius: 8px; border: 1px solid #333; background: #1a1a1a; color: #fff; cursor: pointer; }
+  code { background: #f0f0f0; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+  .scroll-x { overflow-x: auto; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Design system specimen</h1>
+  <p class="intro">Every token, type style and atom, with switch controls, nested examples and a self check. Read only against Figma: nothing here is typed in by hand that Figma didn't already say.</p>
+
+  <div class="panel">
+    <div class="controls">
+      <label>Theme
+        <select id="ctrl-theme">
+          <option value="">(default: Light)</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+      <label>Contrast
+        <select id="ctrl-contrast">
+          <option value="">(default: Standard)</option>
+          <option value="standard">Standard</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </label>
+      <label>Temperature
+        <select id="ctrl-temperature">
+          <option value="">(default: Cool)</option>
+          <option value="cool">Cool</option>
+          <option value="warm">Warm</option>
+        </select>
+      </label>
+      <label>Text scale
+        <select id="ctrl-scale">
+          <option value="">(default: 1X)</option>
+          <option value="1">1X</option>
+          <option value="1.2">1.2X</option>
+          <option value="1.4">1.4X</option>
+          <option value="1.6">1.6X</option>
+          <option value="1.8">1.8X</option>
+          <option value="2">2X</option>
+        </select>
+      </label>
+      <label>Screen size
+        <select id="ctrl-screen">
+          <option value="">(automatic, follows window width)</option>
+          <option value="mobile">Mobile</option>
+          <option value="tablet">Tablet</option>
+          <option value="desktop">Desktop</option>
+        </select>
+      </label>
+      <label>Language
+        <select id="ctrl-language">
+          <option value="">(default: English)</option>
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+          <option value="hi">Hindi</option>
+        </select>
+      </label>
+    </div>
+    <div class="stage-frame">
+      <div id="stage" class="ds-card" style="background-color: var(--ds-color-background-card); padding: 24px; border-radius: 12px; display: inline-flex; flex-direction: column; gap: 16px;">
+        <p class="ds-type-body-default" style="margin:0; color: var(--ds-color-information-primary); max-width: 32em;">Every switch below applies to this card and everything under it. Try Dark, High, Warm together, then Mobile at 1.8X.</p>
+        <button class="ds-button" data-size="large" data-type="primary" data-fill="on">
+          <span class="ds-icon" id="stage-icon"></span>
+          <span>Primary action</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <h2>Type</h2>
+  <p class="intro">Repeats Figma's "Text Style Specimen" frame (node 73:641), group by group, with the same sample text, so the two can be compared side by side.</p>
+  <div class="panel" id="type-section"></div>
+
+  <h2>Colours</h2>
+  <p class="intro">All 127 component colours, grouped by their Figma folder. Swatches update live with the switches above.</p>
+  <div id="colours-section"></div>
+
+  <h2>Sizes</h2>
+  <p class="intro">The 117 responsive numbers (spacing, radius, widths) from Screen Size Switch, grouped by folder.</p>
+  <div id="sizes-section"></div>
+
+  <h2>Atoms</h2>
+  <p class="intro">Every variant, working live. Hover and focus can be held on with the preview attribute controls next to each group, without a real hover or keyboard focus.</p>
+
+  <h3>Buttons</h3>
+  <label style="font-size:12px;"><input type="checkbox" id="btn-preview-hover"> hold hover</label>
+  <label style="font-size:12px; margin-left:12px;"><input type="checkbox" id="btn-preview-focus"> hold focus</label>
+  <div class="atom-grid" id="buttons-grid"></div>
+
+  <h3>Icon-Buttons</h3>
+  <label style="font-size:12px;"><input type="checkbox" id="iconbtn-preview-hover"> hold hover</label>
+  <div class="atom-grid" id="icon-buttons-grid"></div>
+
+  <h3>Chip</h3>
+  <div class="atom-grid" id="chip-grid"></div>
+
+  <h3>Input Field</h3>
+  <div class="atom-grid" id="input-field-grid"></div>
+
+  <h3>Radio Button</h3>
+  <div class="atom-grid" id="radio-grid"></div>
+
+  <h3>Checkbox</h3>
+  <div class="atom-grid" id="checkbox-grid"></div>
+
+  <h3>A card styled only through the shadcn names</h3>
+  <div class="shadcn-card">
+    <h4>Account summary</h4>
+    <p style="color: var(--muted-foreground); margin: 0;">No shadcn component was edited to make this card follow the system: it only reads --background, --card, --primary and friends.</p>
+    <button class="btn">View details</button>
+  </div>
+
+  <h2>Nested example: dark, then high, then warm, then light</h2>
+  <div class="nest" data-theme="dark">
+    <span class="nest-label">data-theme="dark"</span>
+    <div class="nest" data-contrast="high">
+      <span class="nest-label">data-contrast="high" (inside dark)</span>
+      <div class="nest" data-temperature="warm">
+        <span class="nest-label">data-temperature="warm" (inside high, inside dark)</span>
+        <div class="nest" data-theme="light">
+          <span class="nest-label">data-theme="light" (inside warm, inside high, inside dark)</span>
+          <div class="nest-color" style="display:inline-flex; flex-direction:column; gap:16px;">
+            <p class="ds-type-body-default" style="margin:0; color: var(--ds-color-information-primary);">Same slice, four switches deep.</p>
+            <button class="ds-button" data-size="large" data-type="primary" data-fill="on">Primary action</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Nested example: forced mobile, then 1.4X</h2>
+  <div class="nest" data-screen="mobile">
+    <span class="nest-label">data-screen="mobile"</span>
+    <div class="nest" data-text-scale="1.4">
+      <span class="nest-label">data-text-scale="1.4" (inside forced mobile)</span>
+      <div class="nest-color" style="display:inline-flex; flex-direction:column; gap:16px;">
+        <p class="ds-type-body-default" style="margin:0; color: var(--ds-color-information-primary);">Same slice, forced mobile at 1.4X, inside an automatic desktop root.</p>
+        <button class="ds-button" data-size="large" data-type="primary" data-fill="on">Primary action</button>
+      </div>
+    </div>
+  </div>
+
+  <h2>Checks</h2>
+  <div class="panel">
+    <button class="run" id="run-checks">Run checks</button>
+    <p class="auto-note" style="font-size:12px;color:#666;">Value check: every offered token, every combination. Component check: every atom variant reads the token Figma binds. Contrast check: the 67 pairs in <code>audit/CONTRAST_PAIRS.csv</code>. Two failures are known (D5) and shown separately.</p>
+    <div id="value-check-results"></div>
+    <h3>Component check</h3>
+    <div id="component-check-results"></div>
+    <h3>Contrast check</h3>
+    <div id="contrast-check-results"></div>
+  </div>
+</div>
+
+<div id="probe-target" style="position: fixed; top: -99999px; left: -99999px; visibility: hidden;"></div>
+<div id="probe-host" style="position: fixed; top: -99999px; left: -99999px; visibility: hidden;"></div>
+
+<script src="expected.js"></script>
+<script>
+(function () {
+  'use strict';
+  var D = window.DS_EXPECTED;
+
+  // -----------------------------------------------------------------------
+  // Switch controls on the visible stage
+  // -----------------------------------------------------------------------
+  var stage = document.getElementById('stage');
+  function wireControl(id, attr, target) {
+    document.getElementById(id).addEventListener('change', function (e) {
+      if (e.target.value) target.setAttribute(attr, e.target.value);
+      else target.removeAttribute(attr);
+    });
+  }
+  wireControl('ctrl-theme', 'data-theme', stage);
+  wireControl('ctrl-contrast', 'data-contrast', stage);
+  wireControl('ctrl-temperature', 'data-temperature', stage);
+  wireControl('ctrl-scale', 'data-text-scale', stage);
+  wireControl('ctrl-screen', 'data-screen', stage);
+  wireControl('ctrl-language', 'lang', stage);
+
+  // -----------------------------------------------------------------------
+  // Type section: Figma's own grouping and sample text (node 73:641)
+  // -----------------------------------------------------------------------
+  var TYPE_GROUPS = [
+    { group: 'Page', items: [
+      { style: 'Page/Title', text: 'Overview' },
+      { style: 'Page/Subtitle', text: 'Track your balances, spending, and recent activity' },
+    ] },
+    { group: 'Section', items: [
+      { style: 'Section/Title', text: 'Recent Transactions' },
+    ] },
+    { group: 'Data (metrics)', items: [
+      { style: 'Data/Metric/Primary', text: '$128,430.52' },
+      { style: 'Data/Metric/Secondary', text: '$24,918.00' },
+      { style: 'Data/Metric/Compact', text: '$1,240.00' },
+    ] },
+    { group: 'Body', items: [
+      { style: 'Body/Default', text: 'Your monthly spending is 12% lower than last month, driven mainly by reduced travel expenses.' },
+      { style: 'Body/Emphasis', text: 'Acme Logistics Inc. — Invoice #4021' },
+      { style: 'Body/Small', text: 'Includes pending transactions that have not yet settled.' },
+    ] },
+    { group: 'Table', items: [
+      { style: 'Table/Column-Header', text: 'amount' },
+      { style: 'Table/Cell', text: 'Whole Foods Market' },
+      { style: 'Table/Cell-Emphasis', text: '$482.10' },
+    ] },
+    { group: 'Label', items: [
+      { style: 'Label/Default', text: 'Account nickname' },
+      { style: 'Label/Caption', text: 'updated 2 min ago' },
+      { style: 'Label/Micro', text: 'fdic insured' },
+    ] },
+    { group: 'Link', items: [
+      { style: 'Link/Default', text: 'View all transactions' },
+    ] },
+  ];
+  (function renderType() {
+    var root = document.getElementById('type-section');
+    var html = '';
+    TYPE_GROUPS.forEach(function (g) {
+      html += '<h3>' + g.group + '</h3>';
+      g.items.forEach(function (item) {
+        var cls = 'ds-type-' + item.style.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        html += '<div class="type-row"><div class="meta"><code>' + item.style + '</code><code>.' + cls + '</code></div><div class="' + cls + '">' + item.text + '</div></div>';
+      });
+    });
+    root.innerHTML = html;
+  })();
+
+  // -----------------------------------------------------------------------
+  // Colours section: all 127 component colours, grouped by folder
+  // -----------------------------------------------------------------------
+  function folderOf(codeName) {
+    // e.g. ds-color-button-primary-fill-fill -> "button-primary-fill"
+    var parts = codeName.replace(/^ds-color-/, '').split('-');
+    parts.pop();
+    return parts.join('-') || codeName;
+  }
+  (function renderColours() {
+    var groups = {};
+    D.colorTokens.forEach(function (t) {
+      var f = folderOf(t.name.replace(/^--/, ''));
+      (groups[f] = groups[f] || []).push(t);
+    });
+    var root = document.getElementById('colours-section');
+    var html = '';
+    Object.keys(groups).sort().forEach(function (f) {
+      html += '<h3>' + f + '</h3><div class="swatch-grid">';
+      groups[f].forEach(function (t) {
+        html += '<div class="swatch"><div class="swatch-color" style="background-color: var(' + t.name + ');"></div><div class="swatch-label"><code>' + t.name + '</code></div></div>';
+      });
+      html += '</div>';
+    });
+    root.innerHTML = html;
+  })();
+
+  // -----------------------------------------------------------------------
+  // Sizes section: all 117 responsive numbers, grouped by folder
+  // -----------------------------------------------------------------------
+  (function renderSizes() {
+    var groups = {};
+    D.sizeTokens.forEach(function (t) {
+      var parts = t.name.replace(/^--ds-/, '').split('-');
+      parts.pop();
+      var f = parts.join('-') || t.name;
+      (groups[f] = groups[f] || []).push(t);
+    });
+    var root = document.getElementById('sizes-section');
+    var html = '';
+    Object.keys(groups).sort().forEach(function (f) {
+      html += '<h3>' + f + '</h3><div class="scroll-x"><table class="token-table"><tbody>';
+      groups[f].forEach(function (t) {
+        html += '<tr><td><code>' + t.name + '</code></td><td id="size-live-' + t.name.replace(/[^a-zA-Z0-9-]/g, '') + '" style="font-variant-numeric: tabular-nums;"></td></tr>';
+      });
+      html += '</tbody></table></div>';
+    });
+    root.innerHTML = html;
+    // fill in live computed values once
+    var cs = getComputedStyle(document.documentElement);
+    D.sizeTokens.forEach(function (t) {
+      var el = document.getElementById('size-live-' + t.name.replace(/[^a-zA-Z0-9-]/g, ''));
+      if (el) el.textContent = cs.getPropertyValue(t.name).trim();
+    });
+  })();
+
+  // -----------------------------------------------------------------------
+  // Atoms: rendered live from audit/components.json's own variant list
+  // (via expected.js's componentChecks, which carries the same names/attrs)
+  // -----------------------------------------------------------------------
+  function attrsFromVariantName(name) {
+    var out = {};
+    name.split(', ').forEach(function (part) {
+      var kv = part.split('=');
+      out[kv[0]] = kv[1];
+    });
+    return out;
+  }
+  var ICONS = {}; // filled by fetch below
+
+  function renderButtons(gridId, cssClass, hasIcon) {
+    var seen = {};
+    var root = document.getElementById(gridId);
+    var html = '';
+    D.componentChecks.filter(function (c) { return c.component === cssClass && c.mode === 'size'; }).forEach(function (c) {
+      if (seen[c.variant]) return;
+      seen[c.variant] = true;
+      var a = c.selectorAttrs;
+      var label = c.variant;
+      html += '<div class="atom-cell"><span class="cell-label">' + label + '</span>';
+      html += '<button class="' + cssClass + '" data-size="' + a.Size.toLowerCase() + '" data-type="' + a.Type.toLowerCase() + '" data-fill="' + a.Fill.toLowerCase() + '">';
+      if (hasIcon) html += '<span class="ds-icon"></span>';
+      if (cssClass === 'ds-button') html += '<span>Button</span>';
+      html += '</button></div>';
+    });
+    root.innerHTML = html;
+  }
+  renderButtons('buttons-grid', 'ds-button', true);
+  renderButtons('icon-buttons-grid', 'ds-icon-button', true);
+
+  (function renderChip() {
+    var root = document.getElementById('chip-grid');
+    var html = '';
+    var seen = {};
+    D.componentChecks.filter(function (c) { return c.component === 'ds-chip' && c.mode === 'default'; }).forEach(function (c) {
+      if (seen[c.variant]) return;
+      seen[c.variant] = true;
+      var a = c.selectorAttrs;
+      html += '<div class="atom-cell"><span class="cell-label">' + c.variant + '</span>';
+      html += '<span class="ds-chip" data-type="' + a.Type.toLowerCase() + '" data-style="' + a.Style.toLowerCase() + '"><span class="ds-icon"></span><span>Chip</span></span></div>';
+    });
+    root.innerHTML = html;
+  })();
+
+  (function renderInputField() {
+    var root = document.getElementById('input-field-grid');
+    var html = '';
+    ['Filled', 'Focused', 'Disabled', 'Placeholder', 'Error'].forEach(function (state) {
+      html += '<div class="atom-cell field-demo"><span class="cell-label">States=' + state + '</span>';
+      html += '<div class="ds-field"' + (state === 'Disabled' ? ' data-disabled' : '') + '>';
+      html += '<div class="ds-field-label"><span>Label</span><span class="ds-required">*</span></div>';
+      var boxAttrs = state === 'Error' ? ' aria-invalid="true"' : (state === 'Focused' ? ' data-preview="focus"' : '');
+      html += '<div class="ds-field-box"' + boxAttrs + '><span class="ds-icon"></span><span>' + (state === 'Filled' ? 'user@example.com' : 'Placeholder') + '</span></div>';
+      html += '<div class="ds-field-helper"><span>Helper text</span></div>';
+      html += '</div></div>';
+    });
+    root.innerHTML = html;
+  })();
+
+  (function renderRadioCheckbox() {
+    var rRoot = document.getElementById('radio-grid');
+    var rHtml = '';
+    [['Default', false, false], ['Selected', true, false], ['Selected Tick', true, true]].forEach(function (entry) {
+      var state = entry[0], checked = entry[1], tick = entry[2];
+      rHtml += '<div class="atom-cell"><span class="cell-label">State=' + state + '</span>';
+      rHtml += '<label class="ds-radio"' + (tick ? ' data-mark="tick"' : '') + '><input type="radio" name="specimen-radio-' + (tick ? 'tick' : 'dot') + '"' + (checked ? ' checked' : '') + '><span class="ds-shape"><span class="ds-icon ds-icon-check"></span></span><span class="ds-label">Label</span></label></div>';
+    });
+    rRoot.innerHTML = rHtml;
+
+    var cRoot = document.getElementById('checkbox-grid');
+    var cHtml = '';
+    [['Default', 'unchecked'], ['Selected', 'checked'], ['Intermediate', 'indeterminate']].forEach(function (entry) {
+      var state = entry[0], mode = entry[1];
+      var id = 'cb-' + state;
+      cHtml += '<div class="atom-cell"><span class="cell-label">State=' + state + '</span>';
+      cHtml += '<label class="ds-checkbox"><input type="checkbox" id="' + id + '"' + (mode === 'checked' ? ' checked' : '') + '><span class="ds-shape"><span class="ds-icon ds-icon-check"></span><span class="ds-icon-dash"></span></span><span class="ds-label">Label</span></label></div>';
+    });
+    cRoot.innerHTML = cHtml;
+    var indEl = document.getElementById('cb-Intermediate');
+    if (indEl) indEl.indeterminate = true;
+  })();
+
+  // -----------------------------------------------------------------------
+  // Icons: Phosphor SVGs, embedded directly (fill="currentColor"), fetched
+  // once and stamped into every .ds-icon / .ds-icon-check placeholder.
+  // -----------------------------------------------------------------------
+  function stampIcon(selector, svgText) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      if (!el.querySelector('svg')) el.innerHTML = svgText;
+    });
+  }
+  Promise.all(['user', 'calendar', 'question', 'check', 'arrow-clockwise'].map(function (name) {
+    return fetch('../dist/icons/' + name + '.svg').then(function (r) { return r.text(); }).then(function (svg) { return [name, svg]; });
+  })).then(function (pairs) {
+    var byName = {}; pairs.forEach(function (p) { byName[p[0]] = p[1]; });
+    stampIcon('#buttons-grid .ds-icon', byName['arrow-clockwise']);
+    stampIcon('#stage-icon', byName['arrow-clockwise']);
+    stampIcon('#icon-buttons-grid .ds-icon', byName['arrow-clockwise']);
+    stampIcon('#chip-grid .ds-icon', byName['user']);
+    stampIcon('#input-field-grid .ds-icon', byName['user']);
+    stampIcon('.ds-icon-check', byName['check']);
+  }).catch(function () { /* icons are decorative for these checks; token values don't depend on them */ });
+
+  // -----------------------------------------------------------------------
+  // Preview-attribute toggles for buttons / icon-buttons
+  // -----------------------------------------------------------------------
+  function wirePreview(checkboxId, gridId, attrValue) {
+    document.getElementById(checkboxId).addEventListener('change', function (e) {
+      document.querySelectorAll('#' + gridId + ' [class^="ds-"]').forEach(function (el) {
+        if (e.target.checked) el.setAttribute('data-preview', attrValue);
+        else el.removeAttribute('data-preview');
+      });
+    });
+  }
+  wirePreview('btn-preview-hover', 'buttons-grid', 'hover');
+  wirePreview('btn-preview-focus', 'buttons-grid', 'focus');
+  wirePreview('iconbtn-preview-hover', 'icon-buttons-grid', 'hover');
+
+  // -----------------------------------------------------------------------
+  // Value check (plan section 9.2)
+  // -----------------------------------------------------------------------
+  function compareByKind(kind, expected, actual) {
+    if (kind === 'color') return String(expected).toLowerCase() === String(actual).toLowerCase();
+    if (kind === 'size' || kind === 'number') { var a = parseFloat(actual); return !isNaN(a) && Math.abs(Number(expected) - a) <= 0.01; }
+    if (kind === 'font-family') { var first = String(actual).split(',')[0].trim().replace(/^["']|["']$/g, ''); return first === expected; }
+    return String(expected) === String(actual);
+  }
+  function runValueCheck() {
+    var probe = document.getElementById('probe-target');
+    var diffs = []; var checked = 0;
+    function clearProbe() { ['data-theme', 'data-contrast', 'data-temperature', 'data-screen', 'data-text-scale'].forEach(function (a) { probe.removeAttribute(a); }); }
+    var colorAndShadcn = D.colorTokens.concat(D.shadcnTokens);
+    for (var i = 0; i < D.colorCombos.length; i++) {
+      clearProbe();
+      var cc = D.colorCombos[i];
+      probe.setAttribute('data-theme', cc.theme); probe.setAttribute('data-contrast', cc.contrast); probe.setAttribute('data-temperature', cc.temperature);
+      var cs = getComputedStyle(probe);
+      colorAndShadcn.forEach(function (tok) {
+        checked++;
+        var actual = cs.getPropertyValue(tok.name).trim();
+        if (!compareByKind(tok.kind, tok.values[i], actual)) diffs.push({ token: tok.name, combo: cc.label, expected: tok.values[i], actual: actual });
+      });
+    }
+    var sizeAndFamily = D.sizeTokens.concat(D.typeFamilyTokens);
+    for (var j = 0; j < D.sizeCombos.length; j++) {
+      clearProbe();
+      var sc = D.sizeCombos[j];
+      probe.setAttribute('data-screen', sc.screen); probe.setAttribute('data-text-scale', sc.scale);
+      var cs2 = getComputedStyle(probe);
+      sizeAndFamily.forEach(function (tok) {
+        checked++;
+        var actual = cs2.getPropertyValue(tok.name).trim();
+        if (!compareByKind(tok.kind, tok.values[j], actual)) diffs.push({ token: tok.name, combo: sc.label, expected: tok.values[j], actual: actual });
+      });
+    }
+    clearProbe();
+    var wide = window.innerWidth >= D.autoScreen.breakpointPx;
+    var autoExpected = wide ? D.autoScreen.whenDesktop : D.autoScreen.whenMobile;
+    var csAuto = getComputedStyle(probe);
+    var autoLabel = 'automatic, no data-screen (window ' + window.innerWidth + 'px, expect ' + (wide ? 'Desktop' : 'Mobile') + ')';
+    autoExpected.forEach(function (tok) {
+      checked++;
+      var actual = csAuto.getPropertyValue(tok.name).trim();
+      if (!compareByKind(tok.kind, tok.value, actual)) diffs.push({ token: tok.name, combo: autoLabel, expected: tok.value, actual: actual });
+    });
+    renderValueResults(checked, diffs, wide);
+  }
+  function renderValueResults(checked, diffs, wide) {
+    var root = document.getElementById('value-check-results');
+    var html = '';
+    if (diffs.length === 0) {
+      html += '<p class="results-summary pass">All ' + checked + ' values match Figma. Window is currently ' + window.innerWidth + 'px (' + (wide ? 'wide, at least 768px: resolved to Desktop' : 'narrow, under 768px: resolved to Mobile') + ').</p>';
+    } else {
+      html += '<p class="results-summary fail">' + diffs.length + ' of ' + checked + ' values do not match Figma.</p>';
+      html += '<table class="results"><thead><tr><th>Token</th><th>Combination</th><th>Expected</th><th>Actual</th></tr></thead><tbody>';
+      diffs.slice(0, 200).forEach(function (d) { html += '<tr class="fail"><td><code>' + d.token + '</code></td><td>' + d.combo + '</td><td>' + d.expected + '</td><td>' + d.actual + '</td></tr>'; });
+      html += '</tbody></table>';
+      if (diffs.length > 200) html += '<p>...and ' + (diffs.length - 200) + ' more.</p>';
+    }
+    root.innerHTML = html;
+  }
+
+  // -----------------------------------------------------------------------
+  // Component check (plan section 9.4): render each variant into a hidden
+  // host with the right markup, read real computed CSS properties.
+  // -----------------------------------------------------------------------
+  function rgbToHex(rgb) {
+    var m = rgb.match(/rgba?\(([\d.]+),\s*([\d.]+),\s*([\d.]+)/);
+    if (!m) return rgb;
+    var toHex = function (n) { return Math.round(Number(n)).toString(16).padStart(2, '0'); };
+    return '#' + toHex(m[1]) + toHex(m[2]) + toHex(m[3]);
+  }
+  function runComponentCheck() {
+    var host = document.getElementById('probe-host');
+    // expected.mjs resolves size properties at Mobile/1X (DEFAULT_SIZE_MODE); force that here too, so
+    // this check doesn't depend on the window's actual width the way the automatic switch legitimately does.
+    host.setAttribute('data-screen', 'mobile');
+    host.setAttribute('data-text-scale', '1');
+    var diffs = []; var checked = 0;
+    var byComponent = {};
+    D.componentChecks.forEach(function (c) { (byComponent[c.component + '|' + c.variant] = byComponent[c.component + '|' + c.variant] || []).push(c); });
+
+    Object.keys(byComponent).forEach(function (key) {
+      var checksForVariant = byComponent[key];
+      var component = checksForVariant[0].component;
+      var attrs = checksForVariant[0].selectorAttrs || {};
+      host.innerHTML = '';
+      host.removeAttribute('data-theme');
+      var el;
+      if (component === 'ds-button' || component === 'ds-icon-button') {
+        el = document.createElement(component === 'ds-button' ? 'button' : 'button');
+        el.className = component;
+        if (attrs.Size) el.setAttribute('data-size', attrs.Size.toLowerCase());
+        if (attrs.Type) el.setAttribute('data-type', attrs.Type.toLowerCase());
+        if (attrs.Fill) el.setAttribute('data-fill', attrs.Fill.toLowerCase());
+        // A "Hover=On" variant's bindings ARE the hover-state colours (that's what Figma calls that
+        // variant); the CSS only reaches them via :hover or the preview attribute, so trigger it here.
+        if (attrs.Hover === 'On') el.setAttribute('data-preview', 'hover');
+        el.innerHTML = '<span class="ds-icon"></span><span>x</span>';
+        host.appendChild(el);
+      } else if (component === 'ds-chip') {
+        el = document.createElement('span');
+        el.className = 'ds-chip';
+        el.setAttribute('data-type', attrs.Type.toLowerCase());
+        el.setAttribute('data-style', attrs.Style.toLowerCase());
+        el.innerHTML = '<span class="ds-icon"></span><span>x</span>';
+        host.appendChild(el);
+      } else if (component === 'ds-field-box') {
+        var variant = checksForVariant[0].variant;
+        el = document.createElement('div');
+        el.className = 'ds-field-box';
+        if (variant === 'Error') el.setAttribute('aria-invalid', 'true');
+        if (variant === 'Focused') el.setAttribute('data-preview', 'focus');
+        el.innerHTML = '<span>x</span>';
+        host.appendChild(el);
+        if (variant === 'Disabled') { var inp = document.createElement('input'); inp.disabled = true; el.appendChild(inp); }
+      } else if (component === 'ds-radio' || component === 'ds-checkbox') {
+        var st = checksForVariant[0].variant;
+        el = document.createElement('span');
+        el.className = component;
+        host.appendChild(el);
+        var inner = document.createElement('label');
+        inner.className = component;
+        if (st === 'Selected Tick') inner.setAttribute('data-mark', 'tick');
+        var inputEl = document.createElement('input');
+        inputEl.type = component === 'ds-radio' ? 'radio' : 'checkbox';
+        if (st === 'Selected' || st === 'Selected Tick') inputEl.checked = true;
+        inner.appendChild(inputEl);
+        var shape = document.createElement('span'); shape.className = 'ds-shape';
+        inner.appendChild(shape);
+        host.replaceChild(inner, el);
+        el = shape;
+        if (st === 'Intermediate') { inputEl.indeterminate = true; }
+      }
+      if (!el) return;
+
+      var checkVariant = checksForVariant[0].variant;
+      var restingPreview = attrs.Hover === 'On' ? 'hover' : (component === 'ds-field-box' && checkVariant === 'Focused' ? 'focus' : null);
+      checksForVariant.forEach(function (c) {
+        if (c.mode === 'dark') host.setAttribute('data-theme', 'dark'); else host.removeAttribute('data-theme');
+        var preview = c.mode === 'focus-ring' ? 'focus' : restingPreview;
+        if (preview) el.setAttribute('data-preview', preview); else el.removeAttribute('data-preview');
+        var cs = getComputedStyle(el);
+        Object.keys(c.props).forEach(function (propName) {
+          var expected = c.props[propName];
+          if (expected === null || expected === undefined) return;
+          checked++;
+          var actual;
+          if (propName === 'backgroundColor') actual = rgbToHex(cs.backgroundColor);
+          else if (propName === 'color') actual = rgbToHex(cs.color);
+          else if (propName === 'borderColor') actual = rgbToHex(cs.borderTopColor);
+          else if (propName === 'outlineColor') actual = rgbToHex(cs.outlineColor);
+          else if (propName === 'borderWidthPx') actual = parseFloat(cs.borderTopWidth);
+          else if (propName === 'outlineWidthPx') actual = parseFloat(cs.outlineWidth);
+          else if (propName === 'paddingInlinePx') actual = parseFloat(cs.paddingLeft);
+          else if (propName === 'paddingBlockPx') actual = parseFloat(cs.paddingTop);
+          else if (propName === 'borderRadiusPx') actual = parseFloat(cs.borderTopLeftRadius);
+          else if (propName === 'fontSizePx') actual = parseFloat(cs.fontSize);
+          else if (propName === 'fontWeight') actual = Number(cs.fontWeight);
+          else if (propName === 'fontFamily') actual = cs.fontFamily.split(',')[0].trim().replace(/^["']|["']$/g, '');
+          else actual = cs.getPropertyValue(propName);
+          var ok;
+          if (typeof expected === 'number') ok = Math.abs(expected - Number(actual)) <= 0.02;
+          else ok = String(expected).toLowerCase() === String(actual).toLowerCase();
+          if (!ok) diffs.push({ component: c.component, variant: c.variant, mode: c.mode, prop: propName, expected: expected, actual: actual });
+        });
+      });
+    });
+    renderComponentResults(checked, diffs);
+  }
+  function renderComponentResults(checked, diffs) {
+    var root = document.getElementById('component-check-results');
+    var html = '';
+    if (diffs.length === 0) {
+      html += '<p class="results-summary pass">All ' + checked + ' component properties read the token Figma binds.</p>';
+    } else {
+      html += '<p class="results-summary fail">' + diffs.length + ' of ' + checked + ' component properties do not match.</p>';
+      html += '<table class="results"><thead><tr><th>Component</th><th>Variant</th><th>Mode</th><th>Property</th><th>Expected</th><th>Actual</th></tr></thead><tbody>';
+      diffs.slice(0, 200).forEach(function (d) { html += '<tr class="fail"><td>' + d.component + '</td><td>' + d.variant + '</td><td>' + d.mode + '</td><td>' + d.prop + '</td><td>' + d.expected + '</td><td>' + d.actual + '</td></tr>'; });
+      html += '</tbody></table>';
+    }
+    root.innerHTML = html;
+  }
+
+  // -----------------------------------------------------------------------
+  // Contrast check (67 pairs, 12 combinations). Two known failures (D5).
+  // -----------------------------------------------------------------------
+  var CONTRAST_PAIRS = D.contrastPairs;
+  function hexToRgba(hex) {
+    var h = hex.replace('#', '');
+    if (h.length === 3) h = h.split('').map(function (c) { return c + c; }).join('');
+    var r = parseInt(h.slice(0, 2), 16), g = parseInt(h.slice(2, 4), 16), b = parseInt(h.slice(4, 6), 16);
+    var a = h.length === 8 ? parseInt(h.slice(6, 8), 16) / 255 : 1;
+    return { r: r, g: g, b: b, a: a };
+  }
+  function compositeOver(fg, bg) {
+    if (fg.a >= 1) return fg;
+    return { r: fg.r * fg.a + bg.r * (1 - fg.a), g: fg.g * fg.a + bg.g * (1 - fg.a), b: fg.b * fg.a + bg.b * (1 - fg.a), a: 1 };
+  }
+  function srgbToLinear(c) { c = c / 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }
+  function relLuminance(c) { return 0.2126 * srgbToLinear(c.r) + 0.7152 * srgbToLinear(c.g) + 0.0722 * srgbToLinear(c.b); }
+  function contrastRatio(hexFg, hexBg) {
+    var bg = hexToRgba(hexBg); var fg = compositeOver(hexToRgba(hexFg), bg);
+    var L1 = relLuminance(fg), L2 = relLuminance(bg);
+    return (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05);
+  }
+  var KNOWN_FAILURES = { 'Information/Primary|Layer/Layer 3': true };
+  function runContrastCheck() {
+    var probe = document.getElementById('probe-target');
+    ['data-screen', 'data-text-scale'].forEach(function (a) { probe.removeAttribute(a); });
+    var rows = []; var passCount = 0, failCount = 0, knownCount = 0;
+    D.colorCombos.forEach(function (combo) {
+      probe.setAttribute('data-theme', combo.theme); probe.setAttribute('data-contrast', combo.contrast); probe.setAttribute('data-temperature', combo.temperature);
+      var cs = getComputedStyle(probe);
+      CONTRAST_PAIRS.forEach(function (pair) {
+        var fg = cs.getPropertyValue(pair.fgVar).trim();
+        var bg = cs.getPropertyValue(pair.bgVar).trim();
+        if (!fg || !bg) return; // token not in this build's colour list (shouldn't happen for the 67 pairs)
+        var ratio = contrastRatio(fg, bg);
+        var min = pair.minimum ? Number(pair.minimum) : null;
+        var isKnown = KNOWN_FAILURES[pair.fg + '|' + pair.bg] && combo.theme === 'dark' && combo.contrast === 'high';
+        var pass = min ? ratio >= min : true;
+        if (isKnown) knownCount++; else if (pass) passCount++; else failCount++;
+        rows.push({ combo: combo.label, fg: pair.fg, bg: pair.bg, ratio: ratio, min: min, exempt: !min, known: isKnown, pass: pass });
+      });
+    });
+    renderContrastResults(rows, passCount, failCount, knownCount);
+  }
+  function renderContrastResults(rows, passCount, failCount, knownCount) {
+    var root = document.getElementById('contrast-check-results');
+    var total = passCount + failCount + knownCount;
+    var html = '';
+    if (failCount === 0) {
+      html += '<p class="results-summary ' + (knownCount ? 'known' : 'pass') + '">' + passCount + ' of ' + total + ' checked pairs pass AA' + (knownCount ? ', ' + knownCount + ' known failure(s) shown below (D5)' : '') + '.</p>';
+    } else {
+      html += '<p class="results-summary fail">' + failCount + ' unexpected contrast failures (beyond the known D5 case).</p>';
+    }
+    html += '<table class="results"><thead><tr><th>Combination</th><th>Foreground</th><th>Background</th><th>Ratio</th><th>Needs</th><th></th></tr></thead><tbody>';
+    rows.filter(function (r) { return !r.pass || r.known; }).forEach(function (r) {
+      html += '<tr class="' + (r.known ? 'known' : 'fail') + '"><td>' + r.combo + '</td><td>' + r.fg + '</td><td>' + r.bg + '</td><td>' + r.ratio.toFixed(2) + ':1</td><td>' + (r.min || 'n/a') + '</td><td><span class="badge ' + (r.known ? 'known' : 'fail') + '">' + (r.known ? 'KNOWN (D5)' : 'FAIL') + '</span></td></tr>';
+    });
+    html += '</tbody></table>';
+    root.innerHTML = html;
+  }
+
+  document.getElementById('run-checks').addEventListener('click', function () {
+    runValueCheck(); runComponentCheck(); runContrastCheck();
+  });
+  runValueCheck(); runComponentCheck(); runContrastCheck();
+})();
+</script>
+</body>
+</html>

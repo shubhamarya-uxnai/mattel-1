@@ -1,0 +1,5145 @@
+{
+  "sourcePage": "Important Page",
+  "componentSets": [
+    {
+      "name": "Buttons",
+      "figmaId": "21:86",
+      "variantAxes": {
+        "Size": [
+          "Large",
+          "Small"
+        ],
+        "Type": [
+          "Primary",
+          "Secondary",
+          "Neutral"
+        ],
+        "Fill": [
+          "On",
+          "Off"
+        ],
+        "Hover": [
+          "Off",
+          "On"
+        ]
+      },
+      "otherProperties": [
+        {
+          "figmaKey": "Button#21:0",
+          "type": "TEXT",
+          "default": "Button",
+          "appliesTo": "the label layer's characters"
+        },
+        {
+          "figmaKey": "Leading Icon#25:25",
+          "type": "BOOLEAN",
+          "default": true,
+          "appliesTo": "visibility of the leading icon slot (layer 'bx-refresh' in this file)"
+        },
+        {
+          "figmaKey": "Tailing Icon#25:50",
+          "type": "BOOLEAN",
+          "default": false,
+          "appliesTo": "visibility of the trailing icon slot (layer 'bx-rewind' in this file)"
+        },
+        {
+          "figmaKey": "Leading icon#25:75",
+          "type": "INSTANCE_SWAP",
+          "appliesTo": "which icon component fills the leading slot"
+        },
+        {
+          "figmaKey": "Tailing Icon2#25:100",
+          "type": "INSTANCE_SWAP",
+          "appliesTo": "which icon component fills the trailing slot"
+        },
+        {
+          "figmaKey": "Focus#4021:0",
+          "type": "BOOLEAN",
+          "default": false,
+          "appliesTo": "visibility of the focus-ring rectangle ('Rectangle 13')"
+        }
+      ],
+      "layers": {
+        "root": {
+          "figmaType": "COMPONENT",
+          "autoLayout": {
+            "direction": "HORIZONTAL",
+            "primaryAlign": "CENTER",
+            "counterAlign": "CENTER",
+            "sizing": "HUG both axes"
+          },
+          "strokeAlign": "INSIDE"
+        },
+        "leadingIcon": {
+          "figmaType": "INSTANCE",
+          "note": "square icon; only one dimension (width) is bound, the other follows the icon's own aspect ratio"
+        },
+        "label": {
+          "figmaType": "TEXT",
+          "figmaName": "Button",
+          "note": "no named text style; fontSize/fontFamily/fontWeight are bound directly"
+        },
+        "focusRing": {
+          "figmaType": "RECTANGLE",
+          "figmaName": "Rectangle 13",
+          "layoutPositioning": "ABSOLUTE",
+          "offset": {
+            "x": -4,
+            "y": -4
+          },
+          "sizeDelta": {
+            "width": 8,
+            "height": 8
+          },
+          "note": "offset and size-delta are the same at both sizes: -4px/+8px. strokeAlign INSIDE. Colour and width are hardcoded to Primary's Ghost/Border regardless of the button's own Type (verified across all 24 variants, not per-type)."
+        }
+      },
+      "variants": [
+        {
+          "name": "Size=Large, Type=Primary, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Primary",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Secondary, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Secondary",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Neutral, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Neutral",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Primary, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Primary",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Secondary, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Secondary",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Neutral, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Neutral",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Primary, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Primary",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Secondary, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Secondary",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Neutral, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Neutral",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Primary, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Primary",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Secondary, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Secondary",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Large, Type=Neutral, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Neutral",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Primary, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Primary",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Secondary, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Secondary",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Neutral, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Neutral",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Primary, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Primary",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Secondary, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Secondary",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Neutral, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Neutral",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Primary, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Primary",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Secondary, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Secondary",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Neutral, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Neutral",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Primary, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Primary",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Secondary, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Secondary",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        },
+        {
+          "name": "Size=Small, Type=Neutral, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Neutral",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border-Hover"
+              }
+            },
+            "leadingIcon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text-Hover"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text-Hover"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Typography/Font Weight"
+              }
+            },
+            "focusRing": {
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Focus Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              },
+              "offset": {
+                "x": -4,
+                "y": -4
+              },
+              "strokeAlign": "INSIDE"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Icon-Buttons",
+      "figmaId": "288:1521",
+      "variantAxes": {
+        "Size": [
+          "Large",
+          "Small"
+        ],
+        "Type": [
+          "Primary",
+          "Secondary",
+          "Neutral"
+        ],
+        "Fill": [
+          "On",
+          "Off"
+        ],
+        "Hover": [
+          "Off",
+          "On"
+        ]
+      },
+      "otherProperties": [
+        {
+          "figmaKey": "Icon#25:75",
+          "type": "INSTANCE_SWAP",
+          "appliesTo": "which icon component fills the button"
+        }
+      ],
+      "layers": {
+        "root": {
+          "figmaType": "COMPONENT",
+          "autoLayout": {
+            "direction": "HORIZONTAL",
+            "sizing": "HUG both axes"
+          },
+          "note": "paddingInline and paddingBlock both bind to the SAME 'Spacing/Equal' token per size (the button is square), not to Screen Size Switch's Horizontal/Vertical pair that Buttons uses."
+        },
+        "icon": {
+          "figmaType": "INSTANCE",
+          "note": "square icon; only one dimension bound, as in Buttons"
+        }
+      },
+      "notes": [
+        "Icon-Buttons has no Focus property and no focus-ring rectangle in Figma, in any of its 24 variants. No focus ring is built for it; this is an absence, not an oversight."
+      ],
+      "variants": [
+        {
+          "name": "Size=Large, Type=Primary, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Primary",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Secondary, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Secondary",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Neutral, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Neutral",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Primary, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Primary",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Secondary, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Secondary",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Neutral, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Neutral",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Primary, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Primary",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Secondary, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Secondary",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Neutral, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Neutral",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Primary, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Primary",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Secondary, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Secondary",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Large, Type=Neutral, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Large",
+            "Type": "Neutral",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Raw Spacing Values",
+                "name": "S1"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Large/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Primary, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Primary",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Secondary, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Secondary",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Neutral, Fill=On, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Neutral",
+            "Fill": "On",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Primary, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Primary",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Secondary, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Secondary",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Neutral, Fill=Off, Hover=Off",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Neutral",
+            "Fill": "Off",
+            "Hover": "Off"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Primary, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Primary",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Fill/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Secondary, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Secondary",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Fill/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Neutral, Fill=On, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Neutral",
+            "Fill": "On",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Fill/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Primary, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Primary",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Primary/Ghost/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Secondary, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Secondary",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Secondary/Ghost/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        },
+        {
+          "name": "Size=Small, Type=Neutral, Fill=Off, Hover=On",
+          "propValues": {
+            "Size": "Small",
+            "Type": "Neutral",
+            "Fill": "Off",
+            "Hover": "On"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Equal"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Fill-Hover"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Border-Hover"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Buttons/Small/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Button/Neutral/Ghost/Text-Hover"
+              }
+            },
+            "focusRing": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chip",
+      "figmaId": "28:88",
+      "variantAxes": {
+        "Type": [
+          "Primary",
+          "Success",
+          "Error"
+        ],
+        "Style": [
+          "Filled",
+          "Ghost"
+        ]
+      },
+      "otherProperties": [
+        {
+          "figmaKey": "Chip#26:191",
+          "type": "TEXT",
+          "default": "Chip",
+          "appliesTo": "the label layer's characters"
+        },
+        {
+          "figmaKey": "icon#318:0",
+          "type": "BOOLEAN",
+          "default": true,
+          "appliesTo": "visibility of the icon slot"
+        }
+      ],
+      "layers": {
+        "root": {
+          "figmaType": "COMPONENT",
+          "autoLayout": {
+            "direction": "HORIZONTAL",
+            "sizing": "HUG both axes"
+          }
+        },
+        "icon": {
+          "figmaType": "INSTANCE",
+          "figmaName": "bx-user (example icon)",
+          "note": "size binds to Atoms/Chip/Spacing/Icon Size via the icon's HEIGHT only, same as Radio & Check's tick mark (a shared token, not Chip-specific)"
+        },
+        "label": {
+          "figmaType": "TEXT",
+          "figmaName": "Chip",
+          "note": "no named text style; direct bindings, as in Buttons"
+        }
+      },
+      "notes": [
+        "No focus-ring rectangle in this component."
+      ],
+      "variants": [
+        {
+          "name": "Type=Primary, Style=Filled",
+          "propValues": {
+            "Type": "Primary",
+            "Style": "Filled"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Fill/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Fill/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Fill/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "name": "Type=Primary, Style=Ghost",
+          "propValues": {
+            "Type": "Primary",
+            "Style": "Ghost"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Ghost/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Ghost/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Primary/Ghost/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "name": "Type=Success, Style=Filled",
+          "propValues": {
+            "Type": "Success",
+            "Style": "Filled"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Fill/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Fill/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Fill/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "name": "Type=Success, Style=Ghost",
+          "propValues": {
+            "Type": "Success",
+            "Style": "Ghost"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Ghost/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Ghost/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Success/Ghost/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "name": "Type=Error, Style=Filled",
+          "propValues": {
+            "Type": "Error",
+            "Style": "Filled"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Fill/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Fill/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Fill/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Fill/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Fill/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "name": "Type=Error, Style=Ghost",
+          "propValues": {
+            "Type": "Error",
+            "Style": "Ghost"
+          },
+          "bindings": {
+            "root": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Ghost/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Ghost/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Ghost/Border"
+              }
+            },
+            "icon": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Ghost/Text"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Chip/Error/Ghost/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Typography/Font Weight"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Input Field",
+      "figmaId": "26:6135",
+      "variantAxes": {
+        "States": [
+          "Filled",
+          "Focused",
+          "Disabled",
+          "Placeholder",
+          "Error"
+        ]
+      },
+      "otherProperties": [
+        {
+          "figmaKey": "Leading icon#26:125",
+          "type": "INSTANCE_SWAP",
+          "default": "25:5290"
+        },
+        {
+          "figmaKey": "Tailing icon#26:131",
+          "type": "INSTANCE_SWAP",
+          "default": "25:4219"
+        },
+        {
+          "figmaKey": "Label Leading Icon#26:137",
+          "type": "INSTANCE_SWAP",
+          "default": "25:5290"
+        },
+        {
+          "figmaKey": "Required#26:143",
+          "type": "BOOLEAN",
+          "default": true
+        },
+        {
+          "figmaKey": "Helper text#26:149",
+          "type": "BOOLEAN",
+          "default": true
+        },
+        {
+          "figmaKey": "Helper Text#26:155",
+          "type": "TEXT",
+          "default": "Helper Text"
+        },
+        {
+          "figmaKey": "Placeholder#26:161",
+          "type": "TEXT",
+          "default": "Placeholder"
+        },
+        {
+          "figmaKey": "Label#26:167",
+          "type": "TEXT",
+          "default": "Label"
+        },
+        {
+          "figmaKey": "Tailing Icon#26:173",
+          "type": "BOOLEAN",
+          "default": true
+        },
+        {
+          "figmaKey": "Leading Icon#26:179",
+          "type": "BOOLEAN",
+          "default": true
+        },
+        {
+          "figmaKey": "Label Leading icon#26:185",
+          "type": "BOOLEAN",
+          "default": false
+        }
+      ],
+      "layers": {
+        "labelRow": {
+          "figmaName": "Frame 2",
+          "note": "holds Label, the '*' required mark, and an optional leading icon"
+        },
+        "fieldBox": {
+          "figmaName": "Frame 1",
+          "note": "the visible input box: leading icon, Placeholder text, trailing icon"
+        },
+        "helperRow": {
+          "figmaName": "Frame 3",
+          "note": "holds a help-circle icon and Helper Text"
+        }
+      },
+      "notes": [
+        "Frame 2 and Frame 3 share the SAME spacing tokens, named 'Atoms/Input Field/Label/Spacing/*', even though Frame 3 is the helper row, not a second label. A naming leftover in Figma (plan finding 6's 'leftover Spacing 2 group'), carried through as-is.",
+        "Frame 1's own spacing tokens are named 'Atoms/Input Field/Place Holder/Spacing 2/*' (the 'Spacing 2' group finding 6 flagged).",
+        "Filled state has no visible border (strokesCount 0) even though strokeWeight=1 is set; Focused and Error states DO show a border.",
+        "Error state's field background binds to 'Atoms/Input Field/Disabled', the SAME token Disabled state uses, not a distinct 'Error' background. This looks like it may not be intentional: flagged for the report, not corrected.",
+        "The input label's own font-family binds to the generic 'Typography/Text Styles/Label/Font Family' token, not an Input-Field-specific one, while its font-size and font-weight DO use Input-Field-specific tokens. Recorded exactly as bound."
+      ],
+      "states": [
+        {
+          "state": "Filled",
+          "bindings": {
+            "labelRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "labelColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "labelFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Size"
+              },
+              "labelFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Typography/Text Styles/Label/Font Family"
+              },
+              "labelFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Weight"
+              },
+              "requiredMarkColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Error"
+              },
+              "labelIconVisible": false,
+              "labelIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Icon Size"
+              }
+            },
+            "fieldBox": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Border Radius"
+              },
+              "borderWidth": null,
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Default"
+              },
+              "borderColor": null,
+              "hasBorder": false,
+              "leadingIconVisible": true,
+              "leadingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "leadingIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "trailingIconVisible": true,
+              "trailingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "placeholderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "placeholderFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Size"
+              },
+              "placeholderFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Family"
+              },
+              "placeholderFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Weight"
+              }
+            },
+            "helperRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "helperIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperTextColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Size"
+              },
+              "helperFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Family"
+              },
+              "helperFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "state": "Focused",
+          "bindings": {
+            "labelRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "labelColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "labelFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Size"
+              },
+              "labelFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Typography/Text Styles/Label/Font Family"
+              },
+              "labelFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Weight"
+              },
+              "requiredMarkColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Error"
+              },
+              "labelIconVisible": false,
+              "labelIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Icon Size"
+              }
+            },
+            "fieldBox": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Default"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Border"
+              },
+              "hasBorder": true,
+              "leadingIconVisible": true,
+              "leadingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "leadingIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "trailingIconVisible": true,
+              "trailingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "placeholderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "placeholderFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Size"
+              },
+              "placeholderFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Family"
+              },
+              "placeholderFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Weight"
+              }
+            },
+            "helperRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "helperIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperTextColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Size"
+              },
+              "helperFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Family"
+              },
+              "helperFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "state": "Placeholder",
+          "bindings": {
+            "labelRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "labelColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "labelFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Size"
+              },
+              "labelFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Typography/Text Styles/Label/Font Family"
+              },
+              "labelFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Weight"
+              },
+              "requiredMarkColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Error"
+              },
+              "labelIconVisible": false,
+              "labelIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Icon Size"
+              }
+            },
+            "fieldBox": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Border Radius"
+              },
+              "borderWidth": null,
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Default"
+              },
+              "borderColor": null,
+              "hasBorder": false,
+              "leadingIconVisible": true,
+              "leadingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "leadingIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "trailingIconVisible": true,
+              "trailingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "placeholderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "placeholderFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Size"
+              },
+              "placeholderFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Family"
+              },
+              "placeholderFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Weight"
+              }
+            },
+            "helperRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "helperIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperTextColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Size"
+              },
+              "helperFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Family"
+              },
+              "helperFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "state": "Disabled",
+          "bindings": {
+            "labelRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "labelColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "labelFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Size"
+              },
+              "labelFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Typography/Text Styles/Label/Font Family"
+              },
+              "labelFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Weight"
+              },
+              "requiredMarkColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Error"
+              },
+              "labelIconVisible": false,
+              "labelIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Icon Size"
+              }
+            },
+            "fieldBox": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Disabled"
+              },
+              "borderColor": null,
+              "hasBorder": false,
+              "leadingIconVisible": true,
+              "leadingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "leadingIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "trailingIconVisible": true,
+              "trailingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "placeholderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "placeholderFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Size"
+              },
+              "placeholderFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Family"
+              },
+              "placeholderFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Weight"
+              }
+            },
+            "helperRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "helperIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperTextColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Size"
+              },
+              "helperFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Family"
+              },
+              "helperFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "state": "Error",
+          "bindings": {
+            "labelRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "labelColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "labelFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Size"
+              },
+              "labelFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Typography/Text Styles/Label/Font Family"
+              },
+              "labelFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Font Weight"
+              },
+              "requiredMarkColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Error"
+              },
+              "labelIconVisible": false,
+              "labelIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Icon Size"
+              }
+            },
+            "fieldBox": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Vertical"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Border Radius"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Disabled"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Error"
+              },
+              "hasBorder": true,
+              "leadingIconVisible": true,
+              "leadingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "leadingIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "trailingIconVisible": true,
+              "trailingIconSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Spacing 2/Icon Size"
+              },
+              "placeholderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Enabled"
+              },
+              "placeholderFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Size"
+              },
+              "placeholderFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Family"
+              },
+              "placeholderFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Place Holder/Font Weight"
+              }
+            },
+            "helperRow": {
+              "gap": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Gap"
+              },
+              "paddingInline": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Horizontal"
+              },
+              "paddingBlock": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Label/Spacing/Vertical"
+              },
+              "helperIconColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperTextColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Input Field/Text/Disabled"
+              },
+              "helperFontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Size"
+              },
+              "helperFontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Family"
+              },
+              "helperFontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Input Field/Helper text/Font Weight"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Radio Button",
+      "figmaId": "29:146",
+      "variantAxes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Selected Tick"
+        ]
+      },
+      "otherProperties": [
+        {
+          "figmaKey": "Label#26:198",
+          "type": "TEXT",
+          "default": "Label"
+        }
+      ],
+      "layers": {
+        "shape": {
+          "figmaName": "Radio Circle",
+          "figmaType": "FRAME",
+          "note": "cornerRadius token makes it a full circle (20 at 16px = a circle)"
+        },
+        "label": {
+          "figmaType": "TEXT"
+        }
+      },
+      "notes": [
+        "Default: shape has fill + border, no inner content.",
+        "Selected: shape keeps the SAME fill as Default but its border switches to 'Selected Fill' colour, and an 'Inner Fill' ellipse (dot) appears in that same colour. No tick icon.",
+        "Selected Tick: shape has NO border; its fill becomes 'Selected Fill' (solid), and a 'Tick Mark' icon instance appears on top, coloured with the plain 'Fill' token (for contrast against the solid accent background).",
+        "Tick Mark's size binds to 'Atoms/Chip/Spacing/Icon Size', a token from a different component's namespace, reused here rather than a Radio & Check-specific one."
+      ],
+      "states": [
+        {
+          "state": "Default",
+          "bindings": {
+            "gap": {
+              "collection": "Screen Size Switch",
+              "name": "Atoms/Radio & Check/Spacing/Gap"
+            },
+            "shape": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Size"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Border Radius/Radio"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Border"
+              },
+              "hasBorder": true
+            },
+            "innerFill": null,
+            "tickMark": null,
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "state": "Selected",
+          "bindings": {
+            "gap": {
+              "collection": "Screen Size Switch",
+              "name": "Atoms/Radio & Check/Spacing/Gap"
+            },
+            "shape": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Size"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Border Radius/Radio"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Selected Fill"
+              },
+              "hasBorder": true
+            },
+            "innerFill": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Selected Fill"
+              }
+            },
+            "tickMark": null,
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "state": "Selected Tick",
+          "bindings": {
+            "gap": {
+              "collection": "Screen Size Switch",
+              "name": "Atoms/Radio & Check/Spacing/Gap"
+            },
+            "shape": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Size"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Border Radius/Radio"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Selected Fill"
+              },
+              "borderColor": null,
+              "hasBorder": false
+            },
+            "innerFill": null,
+            "tickMark": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Fill"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Weight"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "figmaId": "26:9317",
+      "variantAxes": {
+        "State": [
+          "Default",
+          "Selected",
+          "Intermediate"
+        ]
+      },
+      "otherProperties": [
+        {
+          "figmaKey": "Label#26:198",
+          "type": "TEXT",
+          "default": "Label"
+        }
+      ],
+      "layers": {
+        "shape": {
+          "figmaName": "Radio Circle",
+          "figmaType": "FRAME",
+          "note": "layer keeps the name 'Radio Circle' even in the Checkbox set, a Figma authoring leftover; cornerRadius token makes it a rounded square, not a circle"
+        },
+        "label": {
+          "figmaType": "TEXT"
+        }
+      },
+      "notes": [
+        "Default: shape has fill + border (same Fill/Border tokens as Radio), no inner content.",
+        "Selected: shape has NO border; fill becomes 'Selected Fill'; a 'Tick Mark' icon (checkmark) appears, coloured with the plain 'Fill' token.",
+        "Intermediate: same as Selected, but the Tick Mark's inner vector is a flat dash shape (width 7, height 1) instead of a checkmark, same bindings otherwise.",
+        "Shares Fill/Border/Selected Fill/Text/Border Width Component Tokens with Radio Button (one 'Atoms/Radio & Check/' namespace for both)."
+      ],
+      "states": [
+        {
+          "state": "Default",
+          "bindings": {
+            "gap": {
+              "collection": "Screen Size Switch",
+              "name": "Atoms/Radio & Check/Spacing/Gap"
+            },
+            "shape": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Size"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Border Radius/Check"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Fill"
+              },
+              "borderColor": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Border"
+              },
+              "hasBorder": true
+            },
+            "innerFill": null,
+            "tickMark": null,
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "state": "Selected",
+          "bindings": {
+            "gap": {
+              "collection": "Screen Size Switch",
+              "name": "Atoms/Radio & Check/Spacing/Gap"
+            },
+            "shape": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Size"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Border Radius/Check"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Selected Fill"
+              },
+              "borderColor": null,
+              "hasBorder": false
+            },
+            "innerFill": null,
+            "tickMark": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Fill"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Weight"
+              }
+            }
+          }
+        },
+        {
+          "state": "Intermediate",
+          "bindings": {
+            "gap": {
+              "collection": "Screen Size Switch",
+              "name": "Atoms/Radio & Check/Spacing/Gap"
+            },
+            "shape": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Size"
+              },
+              "borderRadius": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Spacing/Border Radius/Check"
+              },
+              "borderWidth": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Border Width"
+              },
+              "background": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Selected Fill"
+              },
+              "borderColor": null,
+              "hasBorder": false
+            },
+            "innerFill": null,
+            "tickMark": {
+              "size": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Chip/Spacing/Icon Size"
+              },
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Fill"
+              }
+            },
+            "label": {
+              "color": {
+                "collection": "Component Tokens",
+                "name": "Atoms/Radio & Check/Text"
+              },
+              "fontSize": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Size"
+              },
+              "fontFamily": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Family"
+              },
+              "fontWeight": {
+                "collection": "Screen Size Switch",
+                "name": "Atoms/Radio & Check/Typography/Font Weight"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

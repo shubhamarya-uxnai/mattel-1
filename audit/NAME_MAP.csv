@@ -1,0 +1,714 @@
+Figma collection,Figma name,Type,Code name,Access,Figma code syntax today
+Raw Colors Values,blue/0,COLOR,--ds-raw-blue-0,internal,var(--blue-0)
+Raw Colors Values,blue/100,COLOR,--ds-raw-blue-100,internal,var(--blue-100)
+Raw Colors Values,blue/200,COLOR,--ds-raw-blue-200,internal,var(--blue-200)
+Raw Colors Values,blue/300,COLOR,--ds-raw-blue-300,internal,var(--blue-300)
+Raw Colors Values,blue/400,COLOR,--ds-raw-blue-400,internal,var(--blue-400)
+Raw Colors Values,blue/500,COLOR,--ds-raw-blue-500,internal,var(--blue-500)
+Raw Colors Values,blue/600,COLOR,--ds-raw-blue-600,internal,var(--blue-600)
+Raw Colors Values,blue/700,COLOR,--ds-raw-blue-700,internal,var(--blue-700)
+Raw Colors Values,blue/800,COLOR,--ds-raw-blue-800,internal,var(--blue-800)
+Raw Colors Values,blue/900,COLOR,--ds-raw-blue-900,internal,var(--blue-900)
+Raw Colors Values,cool/0,COLOR,--ds-raw-cool-0,internal,var(--cool-0)
+Raw Colors Values,cool/100,COLOR,--ds-raw-cool-100,internal,var(--cool-100)
+Raw Colors Values,cool/150,COLOR,--ds-raw-cool-150,internal,var(--cool-150)
+Raw Colors Values,cool/200,COLOR,--ds-raw-cool-200,internal,var(--cool-200)
+Raw Colors Values,cool/250,COLOR,--ds-raw-cool-250,internal,var(--cool-250)
+Raw Colors Values,cool/300,COLOR,--ds-raw-cool-300,internal,var(--cool-300)
+Raw Colors Values,cool/350,COLOR,--ds-raw-cool-350,internal,var(--cool-350)
+Raw Colors Values,cool/400,COLOR,--ds-raw-cool-400,internal,var(--cool-400)
+Raw Colors Values,cool/450,COLOR,--ds-raw-cool-450,internal,var(--cool-450)
+Raw Colors Values,cool/50,COLOR,--ds-raw-cool-50,internal,var(--cool-50)
+Raw Colors Values,cool/500,COLOR,--ds-raw-cool-500,internal,var(--cool-500)
+Raw Colors Values,cool/550,COLOR,--ds-raw-cool-550,internal,var(--cool-550)
+Raw Colors Values,cool/600,COLOR,--ds-raw-cool-600,internal,var(--cool-600)
+Raw Colors Values,cool/650,COLOR,--ds-raw-cool-650,internal,var(--cool-650)
+Raw Colors Values,cool/700,COLOR,--ds-raw-cool-700,internal,var(--cool-700)
+Raw Colors Values,cool/750,COLOR,--ds-raw-cool-750,internal,var(--cool-750)
+Raw Colors Values,cool/800,COLOR,--ds-raw-cool-800,internal,var(--cool-800)
+Raw Colors Values,cool/850,COLOR,--ds-raw-cool-850,internal,var(--cool-850)
+Raw Colors Values,cool/900,COLOR,--ds-raw-cool-900,internal,var(--cool-900)
+Raw Colors Values,cool/950,COLOR,--ds-raw-cool-950,internal,var(--cool-950)
+Raw Colors Values,green/0,COLOR,--ds-raw-green-0,internal,var(--green-0)
+Raw Colors Values,green/100,COLOR,--ds-raw-green-100,internal,var(--green-100)
+Raw Colors Values,green/200,COLOR,--ds-raw-green-200,internal,var(--green-200)
+Raw Colors Values,green/300,COLOR,--ds-raw-green-300,internal,var(--green-300)
+Raw Colors Values,green/400,COLOR,--ds-raw-green-400,internal,var(--green-400)
+Raw Colors Values,green/500,COLOR,--ds-raw-green-500,internal,var(--green-500)
+Raw Colors Values,green/600,COLOR,--ds-raw-green-600,internal,var(--green-600)
+Raw Colors Values,green/700,COLOR,--ds-raw-green-700,internal,var(--green-700)
+Raw Colors Values,green/800,COLOR,--ds-raw-green-800,internal,var(--green-800)
+Raw Colors Values,green/900,COLOR,--ds-raw-green-900,internal,var(--green-900)
+Raw Colors Values,neutral/0,COLOR,--ds-raw-neutral-0,internal,var(--neutral-0)
+Raw Colors Values,neutral/100,COLOR,--ds-raw-neutral-100,internal,var(--neutral-100)
+Raw Colors Values,neutral/150,COLOR,--ds-raw-neutral-150,internal,var(--neutral-150)
+Raw Colors Values,neutral/200,COLOR,--ds-raw-neutral-200,internal,var(--neutral-200)
+Raw Colors Values,neutral/250,COLOR,--ds-raw-neutral-250,internal,var(--neutral-250)
+Raw Colors Values,neutral/300,COLOR,--ds-raw-neutral-300,internal,var(--neutral-300)
+Raw Colors Values,neutral/350,COLOR,--ds-raw-neutral-350,internal,var(--neutral-350)
+Raw Colors Values,neutral/400,COLOR,--ds-raw-neutral-400,internal,var(--neutral-400)
+Raw Colors Values,neutral/450,COLOR,--ds-raw-neutral-450,internal,var(--neutral-450)
+Raw Colors Values,neutral/50,COLOR,--ds-raw-neutral-50,internal,var(--neutral-50)
+Raw Colors Values,neutral/500,COLOR,--ds-raw-neutral-500,internal,var(--neutral-500)
+Raw Colors Values,neutral/550,COLOR,--ds-raw-neutral-550,internal,var(--neutral-550)
+Raw Colors Values,neutral/600,COLOR,--ds-raw-neutral-600,internal,var(--neutral-600)
+Raw Colors Values,neutral/650,COLOR,--ds-raw-neutral-650,internal,var(--neutral-650)
+Raw Colors Values,neutral/700,COLOR,--ds-raw-neutral-700,internal,var(--neutral-700)
+Raw Colors Values,neutral/750,COLOR,--ds-raw-neutral-750,internal,var(--neutral-750)
+Raw Colors Values,neutral/800,COLOR,--ds-raw-neutral-800,internal,var(--neutral-800)
+Raw Colors Values,neutral/850,COLOR,--ds-raw-neutral-850,internal,var(--neutral-850)
+Raw Colors Values,neutral/900,COLOR,--ds-raw-neutral-900,internal,var(--neutral-900)
+Raw Colors Values,neutral/950,COLOR,--ds-raw-neutral-950,internal,var(--neutral-950)
+Raw Colors Values,orange/0,COLOR,--ds-raw-orange-0,internal,var(--orange-0)
+Raw Colors Values,orange/100,COLOR,--ds-raw-orange-100,internal,var(--orange-100)
+Raw Colors Values,orange/200,COLOR,--ds-raw-orange-200,internal,var(--orange-200)
+Raw Colors Values,orange/300,COLOR,--ds-raw-orange-300,internal,var(--orange-300)
+Raw Colors Values,orange/400,COLOR,--ds-raw-orange-400,internal,var(--orange-400)
+Raw Colors Values,orange/500,COLOR,--ds-raw-orange-500,internal,var(--orange-500)
+Raw Colors Values,orange/600,COLOR,--ds-raw-orange-600,internal,var(--orange-600)
+Raw Colors Values,orange/700,COLOR,--ds-raw-orange-700,internal,var(--orange-700)
+Raw Colors Values,orange/800,COLOR,--ds-raw-orange-800,internal,var(--orange-800)
+Raw Colors Values,orange/900,COLOR,--ds-raw-orange-900,internal,var(--orange-900)
+Raw Colors Values,purple/0,COLOR,--ds-raw-purple-0,internal,var(--purple-0)
+Raw Colors Values,purple/100,COLOR,--ds-raw-purple-100,internal,var(--purple-100)
+Raw Colors Values,purple/200,COLOR,--ds-raw-purple-200,internal,var(--purple-200)
+Raw Colors Values,purple/300,COLOR,--ds-raw-purple-300,internal,var(--purple-300)
+Raw Colors Values,purple/400,COLOR,--ds-raw-purple-400,internal,var(--purple-400)
+Raw Colors Values,purple/500,COLOR,--ds-raw-purple-500,internal,var(--purple-500)
+Raw Colors Values,purple/600,COLOR,--ds-raw-purple-600,internal,var(--purple-600)
+Raw Colors Values,purple/700,COLOR,--ds-raw-purple-700,internal,var(--purple-700)
+Raw Colors Values,purple/800,COLOR,--ds-raw-purple-800,internal,var(--purple-800)
+Raw Colors Values,purple/900,COLOR,--ds-raw-purple-900,internal,var(--purple-900)
+Raw Colors Values,red/0,COLOR,--ds-raw-red-0,internal,var(--red-0)
+Raw Colors Values,red/100,COLOR,--ds-raw-red-100,internal,var(--red-100)
+Raw Colors Values,red/200,COLOR,--ds-raw-red-200,internal,var(--red-200)
+Raw Colors Values,red/300,COLOR,--ds-raw-red-300,internal,var(--red-300)
+Raw Colors Values,red/400,COLOR,--ds-raw-red-400,internal,var(--red-400)
+Raw Colors Values,red/500,COLOR,--ds-raw-red-500,internal,var(--red-500)
+Raw Colors Values,red/600,COLOR,--ds-raw-red-600,internal,var(--red-600)
+Raw Colors Values,red/700,COLOR,--ds-raw-red-700,internal,var(--red-700)
+Raw Colors Values,red/800,COLOR,--ds-raw-red-800,internal,var(--red-800)
+Raw Colors Values,red/900,COLOR,--ds-raw-red-900,internal,var(--red-900)
+Raw Colors Values,teal/0,COLOR,--ds-raw-teal-0,internal,var(--teal-0)
+Raw Colors Values,teal/100,COLOR,--ds-raw-teal-100,internal,var(--teal-100)
+Raw Colors Values,teal/200,COLOR,--ds-raw-teal-200,internal,var(--teal-200)
+Raw Colors Values,teal/300,COLOR,--ds-raw-teal-300,internal,var(--teal-300)
+Raw Colors Values,teal/400,COLOR,--ds-raw-teal-400,internal,var(--teal-400)
+Raw Colors Values,teal/500,COLOR,--ds-raw-teal-500,internal,var(--teal-500)
+Raw Colors Values,teal/600,COLOR,--ds-raw-teal-600,internal,var(--teal-600)
+Raw Colors Values,teal/700,COLOR,--ds-raw-teal-700,internal,var(--teal-700)
+Raw Colors Values,teal/800,COLOR,--ds-raw-teal-800,internal,var(--teal-800)
+Raw Colors Values,teal/900,COLOR,--ds-raw-teal-900,internal,var(--teal-900)
+Raw Colors Values,warm/0,COLOR,--ds-raw-warm-0,internal,var(--warm-0)
+Raw Colors Values,warm/100,COLOR,--ds-raw-warm-100,internal,var(--warm-100)
+Raw Colors Values,warm/150,COLOR,--ds-raw-warm-150,internal,var(--warm-150)
+Raw Colors Values,warm/200,COLOR,--ds-raw-warm-200,internal,var(--warm-200)
+Raw Colors Values,warm/250,COLOR,--ds-raw-warm-250,internal,var(--warm-250)
+Raw Colors Values,warm/300,COLOR,--ds-raw-warm-300,internal,var(--warm-300)
+Raw Colors Values,warm/350,COLOR,--ds-raw-warm-350,internal,var(--warm-350)
+Raw Colors Values,warm/400,COLOR,--ds-raw-warm-400,internal,var(--warm-400)
+Raw Colors Values,warm/450,COLOR,--ds-raw-warm-450,internal,var(--warm-450)
+Raw Colors Values,warm/50,COLOR,--ds-raw-warm-50,internal,var(--warm-50)
+Raw Colors Values,warm/500,COLOR,--ds-raw-warm-500,internal,var(--warm-500)
+Raw Colors Values,warm/550,COLOR,--ds-raw-warm-550,internal,var(--warm-550)
+Raw Colors Values,warm/600,COLOR,--ds-raw-warm-600,internal,var(--warm-600)
+Raw Colors Values,warm/650,COLOR,--ds-raw-warm-650,internal,var(--warm-650)
+Raw Colors Values,warm/700,COLOR,--ds-raw-warm-700,internal,var(--warm-700)
+Raw Colors Values,warm/750,COLOR,--ds-raw-warm-750,internal,var(--warm-750)
+Raw Colors Values,warm/800,COLOR,--ds-raw-warm-800,internal,var(--warm-800)
+Raw Colors Values,warm/850,COLOR,--ds-raw-warm-850,internal,var(--warm-850)
+Raw Colors Values,warm/900,COLOR,--ds-raw-warm-900,internal,var(--warm-900)
+Raw Colors Values,warm/950,COLOR,--ds-raw-warm-950,internal,var(--warm-950)
+Raw Colors Values,warm green/0,COLOR,--ds-raw-warm-green-0,internal,var(--warm-green-50)
+Raw Colors Values,warm green/100,COLOR,--ds-raw-warm-green-100,internal,var(--warm-green-100)
+Raw Colors Values,warm green/200,COLOR,--ds-raw-warm-green-200,internal,var(--warm-green-200)
+Raw Colors Values,warm green/300,COLOR,--ds-raw-warm-green-300,internal,var(--warm-green-300)
+Raw Colors Values,warm green/400,COLOR,--ds-raw-warm-green-400,internal,var(--warm-green-400)
+Raw Colors Values,warm green/500,COLOR,--ds-raw-warm-green-500,internal,var(--warm-green-500)
+Raw Colors Values,warm green/600,COLOR,--ds-raw-warm-green-600,internal,var(--warm-green-600)
+Raw Colors Values,warm green/700,COLOR,--ds-raw-warm-green-700,internal,var(--warm-green-700)
+Raw Colors Values,warm green/800,COLOR,--ds-raw-warm-green-800,internal,var(--warm-green-800)
+Raw Colors Values,warm green/900,COLOR,--ds-raw-warm-green-900,internal,var(--warm-green-900)
+Color Mode Switch,base/0,COLOR,--ds-palette-base-0,internal,var(--base-0)
+Color Mode Switch,base/100,COLOR,--ds-palette-base-100,internal,var(--base-100)
+Color Mode Switch,base/150,COLOR,--ds-palette-base-150,internal,var(--base-150)
+Color Mode Switch,base/200,COLOR,--ds-palette-base-200,internal,var(--base-200)
+Color Mode Switch,base/250,COLOR,--ds-palette-base-250,internal,var(--base-250)
+Color Mode Switch,base/300,COLOR,--ds-palette-base-300,internal,var(--base-300)
+Color Mode Switch,base/350,COLOR,--ds-palette-base-350,internal,var(--base-350)
+Color Mode Switch,base/400,COLOR,--ds-palette-base-400,internal,var(--base-400)
+Color Mode Switch,base/450,COLOR,--ds-palette-base-450,internal,var(--base-450)
+Color Mode Switch,base/50,COLOR,--ds-palette-base-50,internal,var(--base-50)
+Color Mode Switch,base/500,COLOR,--ds-palette-base-500,internal,var(--base-500)
+Color Mode Switch,base/550,COLOR,--ds-palette-base-550,internal,var(--base-550)
+Color Mode Switch,base/600,COLOR,--ds-palette-base-600,internal,var(--base-600)
+Color Mode Switch,base/650,COLOR,--ds-palette-base-650,internal,var(--base-650)
+Color Mode Switch,base/700,COLOR,--ds-palette-base-700,internal,var(--base-700)
+Color Mode Switch,base/750,COLOR,--ds-palette-base-750,internal,var(--base-750)
+Color Mode Switch,base/800,COLOR,--ds-palette-base-800,internal,var(--base-800)
+Color Mode Switch,base/850,COLOR,--ds-palette-base-850,internal,var(--base-850)
+Color Mode Switch,base/900,COLOR,--ds-palette-base-900,internal,var(--base-900)
+Color Mode Switch,base/950,COLOR,--ds-palette-base-950,internal,var(--base-950)
+Color Mode Switch,error/0,COLOR,--ds-palette-error-0,internal,var(--error-0)
+Color Mode Switch,error/100,COLOR,--ds-palette-error-100,internal,var(--error-100)
+Color Mode Switch,error/200,COLOR,--ds-palette-error-200,internal,var(--error-200)
+Color Mode Switch,error/300,COLOR,--ds-palette-error-300,internal,var(--error-300)
+Color Mode Switch,error/400,COLOR,--ds-palette-error-400,internal,var(--error-400)
+Color Mode Switch,error/500,COLOR,--ds-palette-error-500,internal,var(--error-500)
+Color Mode Switch,error/600,COLOR,--ds-palette-error-600,internal,var(--error-600)
+Color Mode Switch,error/700,COLOR,--ds-palette-error-700,internal,var(--error-700)
+Color Mode Switch,error/800,COLOR,--ds-palette-error-800,internal,var(--error-800)
+Color Mode Switch,error/900,COLOR,--ds-palette-error-900,internal,var(--error-900)
+Color Mode Switch,informative/0,COLOR,--ds-palette-informative-0,internal,var(--informative-0)
+Color Mode Switch,informative/100,COLOR,--ds-palette-informative-100,internal,var(--informative-100)
+Color Mode Switch,informative/200,COLOR,--ds-palette-informative-200,internal,var(--informative-200)
+Color Mode Switch,informative/300,COLOR,--ds-palette-informative-300,internal,var(--informative-300)
+Color Mode Switch,informative/400,COLOR,--ds-palette-informative-400,internal,var(--informative-400)
+Color Mode Switch,informative/500,COLOR,--ds-palette-informative-500,internal,var(--informative-500)
+Color Mode Switch,informative/600,COLOR,--ds-palette-informative-600,internal,var(--informative-600)
+Color Mode Switch,informative/700,COLOR,--ds-palette-informative-700,internal,var(--informative-700)
+Color Mode Switch,informative/800,COLOR,--ds-palette-informative-800,internal,var(--informative-800)
+Color Mode Switch,informative/900,COLOR,--ds-palette-informative-900,internal,var(--informative-900)
+Color Mode Switch,primary/0,COLOR,--ds-palette-primary-0,internal,var(--primary-0)
+Color Mode Switch,primary/100,COLOR,--ds-palette-primary-100,internal,var(--primary-100)
+Color Mode Switch,primary/200,COLOR,--ds-palette-primary-200,internal,var(--primary-200)
+Color Mode Switch,primary/300,COLOR,--ds-palette-primary-300,internal,var(--primary-300)
+Color Mode Switch,primary/400,COLOR,--ds-palette-primary-400,internal,var(--primary-400)
+Color Mode Switch,primary/500,COLOR,--ds-palette-primary-500,internal,var(--primary-500)
+Color Mode Switch,primary/600,COLOR,--ds-palette-primary-600,internal,var(--primary-600)
+Color Mode Switch,primary/700,COLOR,--ds-palette-primary-700,internal,var(--primary-700)
+Color Mode Switch,primary/800,COLOR,--ds-palette-primary-800,internal,var(--primary-800)
+Color Mode Switch,primary/900,COLOR,--ds-palette-primary-900,internal,var(--primary-900)
+Color Mode Switch,secondary/0,COLOR,--ds-palette-secondary-0,internal,var(--secondary-0)
+Color Mode Switch,secondary/100,COLOR,--ds-palette-secondary-100,internal,var(--secondary-100)
+Color Mode Switch,secondary/200,COLOR,--ds-palette-secondary-200,internal,var(--secondary-200)
+Color Mode Switch,secondary/300,COLOR,--ds-palette-secondary-300,internal,var(--secondary-300)
+Color Mode Switch,secondary/400,COLOR,--ds-palette-secondary-400,internal,var(--secondary-400)
+Color Mode Switch,secondary/500,COLOR,--ds-palette-secondary-500,internal,var(--secondary-500)
+Color Mode Switch,secondary/600,COLOR,--ds-palette-secondary-600,internal,var(--secondary-600)
+Color Mode Switch,secondary/700,COLOR,--ds-palette-secondary-700,internal,var(--secondary-700)
+Color Mode Switch,secondary/800,COLOR,--ds-palette-secondary-800,internal,var(--secondary-800)
+Color Mode Switch,secondary/900,COLOR,--ds-palette-secondary-900,internal,var(--secondary-900)
+Color Mode Switch,success/0,COLOR,--ds-palette-success-0,internal,var(--success-0)
+Color Mode Switch,success/100,COLOR,--ds-palette-success-100,internal,var(--success-100)
+Color Mode Switch,success/200,COLOR,--ds-palette-success-200,internal,var(--success-200)
+Color Mode Switch,success/300,COLOR,--ds-palette-success-300,internal,var(--success-300)
+Color Mode Switch,success/400,COLOR,--ds-palette-success-400,internal,var(--success-400)
+Color Mode Switch,success/500,COLOR,--ds-palette-success-500,internal,var(--success-500)
+Color Mode Switch,success/600,COLOR,--ds-palette-success-600,internal,var(--success-600)
+Color Mode Switch,success/700,COLOR,--ds-palette-success-700,internal,var(--success-700)
+Color Mode Switch,success/800,COLOR,--ds-palette-success-800,internal,var(--success-800)
+Color Mode Switch,success/900,COLOR,--ds-palette-success-900,internal,var(--success-900)
+Color Mode Switch,tertiary/0,COLOR,--ds-palette-tertiary-0,internal,var(--tertiary-0)
+Color Mode Switch,tertiary/100,COLOR,--ds-palette-tertiary-100,internal,var(--tertiary-100)
+Color Mode Switch,tertiary/200,COLOR,--ds-palette-tertiary-200,internal,var(--tertiary-200)
+Color Mode Switch,tertiary/300,COLOR,--ds-palette-tertiary-300,internal,var(--tertiary-300)
+Color Mode Switch,tertiary/400,COLOR,--ds-palette-tertiary-400,internal,var(--tertiary-400)
+Color Mode Switch,tertiary/500,COLOR,--ds-palette-tertiary-500,internal,var(--tertiary-500)
+Color Mode Switch,tertiary/600,COLOR,--ds-palette-tertiary-600,internal,var(--tertiary-600)
+Color Mode Switch,tertiary/700,COLOR,--ds-palette-tertiary-700,internal,var(--tertiary-700)
+Color Mode Switch,tertiary/800,COLOR,--ds-palette-tertiary-800,internal,var(--tertiary-800)
+Color Mode Switch,tertiary/900,COLOR,--ds-palette-tertiary-900,internal,var(--tertiary-900)
+Color Mode Switch,warning/0,COLOR,--ds-palette-warning-0,internal,var(--warning-0)
+Color Mode Switch,warning/100,COLOR,--ds-palette-warning-100,internal,var(--warning-100)
+Color Mode Switch,warning/200,COLOR,--ds-palette-warning-200,internal,var(--warning-200)
+Color Mode Switch,warning/300,COLOR,--ds-palette-warning-300,internal,var(--warning-300)
+Color Mode Switch,warning/400,COLOR,--ds-palette-warning-400,internal,var(--warning-400)
+Color Mode Switch,warning/500,COLOR,--ds-palette-warning-500,internal,var(--warning-500)
+Color Mode Switch,warning/600,COLOR,--ds-palette-warning-600,internal,var(--warning-600)
+Color Mode Switch,warning/700,COLOR,--ds-palette-warning-700,internal,var(--warning-700)
+Color Mode Switch,warning/800,COLOR,--ds-palette-warning-800,internal,var(--warning-800)
+Color Mode Switch,warning/900,COLOR,--ds-palette-warning-900,internal,var(--warning-900)
+Semantic Tokens,onDark/action/neutral/border,COLOR,--ds-semantic-ondark-action-neutral-border,internal,
+Semantic Tokens,onDark/action/neutral/border-subtle,COLOR,--ds-semantic-ondark-action-neutral-border-subtle,internal,
+Semantic Tokens,onDark/action/neutral/fill,COLOR,--ds-semantic-ondark-action-neutral-fill,internal,
+Semantic Tokens,onDark/action/neutral/fill-hover,COLOR,--ds-semantic-ondark-action-neutral-fill-hover,internal,
+Semantic Tokens,onDark/action/neutral/fill-pressed,COLOR,--ds-semantic-ondark-action-neutral-fill-pressed,internal,
+Semantic Tokens,onDark/action/neutral/surface,COLOR,--ds-semantic-ondark-action-neutral-surface,internal,
+Semantic Tokens,onDark/action/neutral/surface-hover,COLOR,--ds-semantic-ondark-action-neutral-surface-hover,internal,
+Semantic Tokens,onDark/action/neutral/text,COLOR,--ds-semantic-ondark-action-neutral-text,internal,
+Semantic Tokens,onDark/action/neutral/text-hover,COLOR,--ds-semantic-ondark-action-neutral-text-hover,internal,
+Semantic Tokens,onDark/action/primary/border,COLOR,--ds-semantic-ondark-action-primary-border,internal,
+Semantic Tokens,onDark/action/primary/border-subtle,COLOR,--ds-semantic-ondark-action-primary-border-subtle,internal,
+Semantic Tokens,onDark/action/primary/fill,COLOR,--ds-semantic-ondark-action-primary-fill,internal,
+Semantic Tokens,onDark/action/primary/fill-hover,COLOR,--ds-semantic-ondark-action-primary-fill-hover,internal,
+Semantic Tokens,onDark/action/primary/fill-pressed,COLOR,--ds-semantic-ondark-action-primary-fill-pressed,internal,
+Semantic Tokens,onDark/action/primary/surface,COLOR,--ds-semantic-ondark-action-primary-surface,internal,
+Semantic Tokens,onDark/action/primary/surface-hover,COLOR,--ds-semantic-ondark-action-primary-surface-hover,internal,
+Semantic Tokens,onDark/action/primary/text,COLOR,--ds-semantic-ondark-action-primary-text,internal,
+Semantic Tokens,onDark/action/primary/text-hover,COLOR,--ds-semantic-ondark-action-primary-text-hover,internal,
+Semantic Tokens,onDark/action/secondary/border,COLOR,--ds-semantic-ondark-action-secondary-border,internal,
+Semantic Tokens,onDark/action/secondary/border-subtle,COLOR,--ds-semantic-ondark-action-secondary-border-subtle,internal,
+Semantic Tokens,onDark/action/secondary/fill,COLOR,--ds-semantic-ondark-action-secondary-fill,internal,
+Semantic Tokens,onDark/action/secondary/fill-hover,COLOR,--ds-semantic-ondark-action-secondary-fill-hover,internal,
+Semantic Tokens,onDark/action/secondary/fill-pressed,COLOR,--ds-semantic-ondark-action-secondary-fill-pressed,internal,
+Semantic Tokens,onDark/action/secondary/surface,COLOR,--ds-semantic-ondark-action-secondary-surface,internal,
+Semantic Tokens,onDark/action/secondary/surface-hover,COLOR,--ds-semantic-ondark-action-secondary-surface-hover,internal,
+Semantic Tokens,onDark/action/secondary/text,COLOR,--ds-semantic-ondark-action-secondary-text,internal,
+Semantic Tokens,onDark/action/secondary/text-hover,COLOR,--ds-semantic-ondark-action-secondary-text-hover,internal,
+Semantic Tokens,onDark/border/default,COLOR,--ds-semantic-ondark-border-default,internal,
+Semantic Tokens,onDark/border/focus,COLOR,--ds-semantic-ondark-border-focus,internal,
+Semantic Tokens,onDark/border/strong,COLOR,--ds-semantic-ondark-border-strong,internal,
+Semantic Tokens,onDark/border/subtle,COLOR,--ds-semantic-ondark-border-subtle,internal,
+Semantic Tokens,onDark/chart/1,COLOR,--ds-semantic-ondark-chart-1,internal,
+Semantic Tokens,onDark/chart/2,COLOR,--ds-semantic-ondark-chart-2,internal,
+Semantic Tokens,onDark/chart/3,COLOR,--ds-semantic-ondark-chart-3,internal,
+Semantic Tokens,onDark/chart/4,COLOR,--ds-semantic-ondark-chart-4,internal,
+Semantic Tokens,onDark/chart/5,COLOR,--ds-semantic-ondark-chart-5,internal,
+Semantic Tokens,onDark/chart/area-fill,COLOR,--ds-semantic-ondark-chart-area-fill,internal,
+Semantic Tokens,onDark/chart/bar-medium,COLOR,--ds-semantic-ondark-chart-bar-medium,internal,
+Semantic Tokens,onDark/chart/bar-strong,COLOR,--ds-semantic-ondark-chart-bar-strong,internal,
+Semantic Tokens,onDark/chart/grid,COLOR,--ds-semantic-ondark-chart-grid,internal,
+Semantic Tokens,onDark/chart/label,COLOR,--ds-semantic-ondark-chart-label,internal,
+Semantic Tokens,onDark/layer/0,COLOR,--ds-semantic-ondark-layer-0,internal,
+Semantic Tokens,onDark/layer/1,COLOR,--ds-semantic-ondark-layer-1,internal,
+Semantic Tokens,onDark/layer/2,COLOR,--ds-semantic-ondark-layer-2,internal,
+Semantic Tokens,onDark/layer/3,COLOR,--ds-semantic-ondark-layer-3,internal,
+Semantic Tokens,onDark/layer/4,COLOR,--ds-semantic-ondark-layer-4,internal,
+Semantic Tokens,onDark/layer/5,COLOR,--ds-semantic-ondark-layer-5,internal,
+Semantic Tokens,onDark/on-fill/default,COLOR,--ds-semantic-ondark-on-fill-default,internal,
+Semantic Tokens,onDark/on-fill/muted,COLOR,--ds-semantic-ondark-on-fill-muted,internal,
+Semantic Tokens,onDark/status/error/border,COLOR,--ds-semantic-ondark-status-error-border,internal,
+Semantic Tokens,onDark/status/error/fill,COLOR,--ds-semantic-ondark-status-error-fill,internal,
+Semantic Tokens,onDark/status/error/surface,COLOR,--ds-semantic-ondark-status-error-surface,internal,
+Semantic Tokens,onDark/status/error/text,COLOR,--ds-semantic-ondark-status-error-text,internal,
+Semantic Tokens,onDark/status/info/border,COLOR,--ds-semantic-ondark-status-info-border,internal,
+Semantic Tokens,onDark/status/info/fill,COLOR,--ds-semantic-ondark-status-info-fill,internal,
+Semantic Tokens,onDark/status/info/surface,COLOR,--ds-semantic-ondark-status-info-surface,internal,
+Semantic Tokens,onDark/status/info/text,COLOR,--ds-semantic-ondark-status-info-text,internal,
+Semantic Tokens,onDark/status/success/border,COLOR,--ds-semantic-ondark-status-success-border,internal,
+Semantic Tokens,onDark/status/success/fill,COLOR,--ds-semantic-ondark-status-success-fill,internal,
+Semantic Tokens,onDark/status/success/surface,COLOR,--ds-semantic-ondark-status-success-surface,internal,
+Semantic Tokens,onDark/status/success/text,COLOR,--ds-semantic-ondark-status-success-text,internal,
+Semantic Tokens,onDark/status/warning/border,COLOR,--ds-semantic-ondark-status-warning-border,internal,
+Semantic Tokens,onDark/status/warning/fill,COLOR,--ds-semantic-ondark-status-warning-fill,internal,
+Semantic Tokens,onDark/status/warning/surface,COLOR,--ds-semantic-ondark-status-warning-surface,internal,
+Semantic Tokens,onDark/status/warning/text,COLOR,--ds-semantic-ondark-status-warning-text,internal,
+Semantic Tokens,onDark/surface/default,COLOR,--ds-semantic-ondark-surface-default,internal,
+Semantic Tokens,onDark/surface/overlay,COLOR,--ds-semantic-ondark-surface-overlay,internal,
+Semantic Tokens,onDark/surface/page,COLOR,--ds-semantic-ondark-surface-page,internal,
+Semantic Tokens,onDark/surface/panel,COLOR,--ds-semantic-ondark-surface-panel,internal,
+Semantic Tokens,onDark/surface/raised,COLOR,--ds-semantic-ondark-surface-raised,internal,
+Semantic Tokens,onDark/surface/sunken,COLOR,--ds-semantic-ondark-surface-sunken,internal,
+Semantic Tokens,onLight/action/neutral/border,COLOR,--ds-semantic-onlight-action-neutral-border,internal,
+Semantic Tokens,onLight/action/neutral/border-subtle,COLOR,--ds-semantic-onlight-action-neutral-border-subtle,internal,
+Semantic Tokens,onLight/action/neutral/fill,COLOR,--ds-semantic-onlight-action-neutral-fill,internal,
+Semantic Tokens,onLight/action/neutral/fill-hover,COLOR,--ds-semantic-onlight-action-neutral-fill-hover,internal,
+Semantic Tokens,onLight/action/neutral/fill-pressed,COLOR,--ds-semantic-onlight-action-neutral-fill-pressed,internal,
+Semantic Tokens,onLight/action/neutral/surface,COLOR,--ds-semantic-onlight-action-neutral-surface,internal,
+Semantic Tokens,onLight/action/neutral/surface-hover,COLOR,--ds-semantic-onlight-action-neutral-surface-hover,internal,
+Semantic Tokens,onLight/action/neutral/text,COLOR,--ds-semantic-onlight-action-neutral-text,internal,
+Semantic Tokens,onLight/action/neutral/text-hover,COLOR,--ds-semantic-onlight-action-neutral-text-hover,internal,
+Semantic Tokens,onLight/action/primary/border,COLOR,--ds-semantic-onlight-action-primary-border,internal,
+Semantic Tokens,onLight/action/primary/border-subtle,COLOR,--ds-semantic-onlight-action-primary-border-subtle,internal,
+Semantic Tokens,onLight/action/primary/fill,COLOR,--ds-semantic-onlight-action-primary-fill,internal,
+Semantic Tokens,onLight/action/primary/fill-hover,COLOR,--ds-semantic-onlight-action-primary-fill-hover,internal,
+Semantic Tokens,onLight/action/primary/fill-pressed,COLOR,--ds-semantic-onlight-action-primary-fill-pressed,internal,
+Semantic Tokens,onLight/action/primary/surface,COLOR,--ds-semantic-onlight-action-primary-surface,internal,
+Semantic Tokens,onLight/action/primary/surface-hover,COLOR,--ds-semantic-onlight-action-primary-surface-hover,internal,
+Semantic Tokens,onLight/action/primary/text,COLOR,--ds-semantic-onlight-action-primary-text,internal,
+Semantic Tokens,onLight/action/primary/text-hover,COLOR,--ds-semantic-onlight-action-primary-text-hover,internal,
+Semantic Tokens,onLight/action/secondary/border,COLOR,--ds-semantic-onlight-action-secondary-border,internal,
+Semantic Tokens,onLight/action/secondary/border-subtle,COLOR,--ds-semantic-onlight-action-secondary-border-subtle,internal,
+Semantic Tokens,onLight/action/secondary/fill,COLOR,--ds-semantic-onlight-action-secondary-fill,internal,
+Semantic Tokens,onLight/action/secondary/fill-hover,COLOR,--ds-semantic-onlight-action-secondary-fill-hover,internal,
+Semantic Tokens,onLight/action/secondary/fill-pressed,COLOR,--ds-semantic-onlight-action-secondary-fill-pressed,internal,
+Semantic Tokens,onLight/action/secondary/surface,COLOR,--ds-semantic-onlight-action-secondary-surface,internal,
+Semantic Tokens,onLight/action/secondary/surface-hover,COLOR,--ds-semantic-onlight-action-secondary-surface-hover,internal,
+Semantic Tokens,onLight/action/secondary/text,COLOR,--ds-semantic-onlight-action-secondary-text,internal,
+Semantic Tokens,onLight/action/secondary/text-hover,COLOR,--ds-semantic-onlight-action-secondary-text-hover,internal,
+Semantic Tokens,onLight/border/default,COLOR,--ds-semantic-onlight-border-default,internal,
+Semantic Tokens,onLight/border/focus,COLOR,--ds-semantic-onlight-border-focus,internal,
+Semantic Tokens,onLight/border/strong,COLOR,--ds-semantic-onlight-border-strong,internal,
+Semantic Tokens,onLight/border/subtle,COLOR,--ds-semantic-onlight-border-subtle,internal,
+Semantic Tokens,onLight/chart/1,COLOR,--ds-semantic-onlight-chart-1,internal,
+Semantic Tokens,onLight/chart/2,COLOR,--ds-semantic-onlight-chart-2,internal,
+Semantic Tokens,onLight/chart/3,COLOR,--ds-semantic-onlight-chart-3,internal,
+Semantic Tokens,onLight/chart/4,COLOR,--ds-semantic-onlight-chart-4,internal,
+Semantic Tokens,onLight/chart/5,COLOR,--ds-semantic-onlight-chart-5,internal,
+Semantic Tokens,onLight/chart/area-fill,COLOR,--ds-semantic-onlight-chart-area-fill,internal,
+Semantic Tokens,onLight/chart/bar-medium,COLOR,--ds-semantic-onlight-chart-bar-medium,internal,
+Semantic Tokens,onLight/chart/bar-strong,COLOR,--ds-semantic-onlight-chart-bar-strong,internal,
+Semantic Tokens,onLight/chart/grid,COLOR,--ds-semantic-onlight-chart-grid,internal,
+Semantic Tokens,onLight/chart/label,COLOR,--ds-semantic-onlight-chart-label,internal,
+Semantic Tokens,onLight/layer/0,COLOR,--ds-semantic-onlight-layer-0,internal,
+Semantic Tokens,onLight/layer/1,COLOR,--ds-semantic-onlight-layer-1,internal,
+Semantic Tokens,onLight/layer/2,COLOR,--ds-semantic-onlight-layer-2,internal,
+Semantic Tokens,onLight/layer/3,COLOR,--ds-semantic-onlight-layer-3,internal,
+Semantic Tokens,onLight/layer/4,COLOR,--ds-semantic-onlight-layer-4,internal,
+Semantic Tokens,onLight/layer/5,COLOR,--ds-semantic-onlight-layer-5,internal,
+Semantic Tokens,onLight/on-fill/default,COLOR,--ds-semantic-onlight-on-fill-default,internal,
+Semantic Tokens,onLight/on-fill/muted,COLOR,--ds-semantic-onlight-on-fill-muted,internal,
+Semantic Tokens,onLight/status/error/border,COLOR,--ds-semantic-onlight-status-error-border,internal,
+Semantic Tokens,onLight/status/error/fill,COLOR,--ds-semantic-onlight-status-error-fill,internal,
+Semantic Tokens,onLight/status/error/surface,COLOR,--ds-semantic-onlight-status-error-surface,internal,
+Semantic Tokens,onLight/status/error/text,COLOR,--ds-semantic-onlight-status-error-text,internal,
+Semantic Tokens,onLight/status/info/border,COLOR,--ds-semantic-onlight-status-info-border,internal,
+Semantic Tokens,onLight/status/info/fill,COLOR,--ds-semantic-onlight-status-info-fill,internal,
+Semantic Tokens,onLight/status/info/surface,COLOR,--ds-semantic-onlight-status-info-surface,internal,
+Semantic Tokens,onLight/status/info/text,COLOR,--ds-semantic-onlight-status-info-text,internal,
+Semantic Tokens,onLight/status/success/border,COLOR,--ds-semantic-onlight-status-success-border,internal,
+Semantic Tokens,onLight/status/success/fill,COLOR,--ds-semantic-onlight-status-success-fill,internal,
+Semantic Tokens,onLight/status/success/surface,COLOR,--ds-semantic-onlight-status-success-surface,internal,
+Semantic Tokens,onLight/status/success/text,COLOR,--ds-semantic-onlight-status-success-text,internal,
+Semantic Tokens,onLight/status/warning/border,COLOR,--ds-semantic-onlight-status-warning-border,internal,
+Semantic Tokens,onLight/status/warning/fill,COLOR,--ds-semantic-onlight-status-warning-fill,internal,
+Semantic Tokens,onLight/status/warning/surface,COLOR,--ds-semantic-onlight-status-warning-surface,internal,
+Semantic Tokens,onLight/status/warning/text,COLOR,--ds-semantic-onlight-status-warning-text,internal,
+Semantic Tokens,onLight/surface/default,COLOR,--ds-semantic-onlight-surface-default,internal,
+Semantic Tokens,onLight/surface/overlay,COLOR,--ds-semantic-onlight-surface-overlay,internal,
+Semantic Tokens,onLight/surface/page,COLOR,--ds-semantic-onlight-surface-page,internal,
+Semantic Tokens,onLight/surface/panel,COLOR,--ds-semantic-onlight-surface-panel,internal,
+Semantic Tokens,onLight/surface/raised,COLOR,--ds-semantic-onlight-surface-raised,internal,
+Semantic Tokens,onLight/surface/sunken,COLOR,--ds-semantic-onlight-surface-sunken,internal,
+Component Tokens,Atoms/Button/Neutral/Fill/Border Width,FLOAT,--ds-button-neutral-fill-border-width,public,
+Component Tokens,Atoms/Button/Neutral/Ghost/Border Width,FLOAT,--ds-button-neutral-ghost-border-width,public,
+Component Tokens,Atoms/Button/Primary/Fill/Border Width,FLOAT,--ds-button-primary-fill-border-width,public,
+Component Tokens,Atoms/Button/Primary/Ghost/Border Width,FLOAT,--ds-button-primary-ghost-border-width,public,
+Component Tokens,Atoms/Button/Secondary/Fill/Border Width,FLOAT,--ds-button-secondary-fill-border-width,public,
+Component Tokens,Atoms/Button/Secondary/Ghost/Border Width,FLOAT,--ds-button-secondary-ghost-border-width,public,
+Component Tokens,Atoms/Chip/Error/Fill/Border Width,FLOAT,--ds-chip-error-fill-border-width,public,
+Component Tokens,Atoms/Chip/Error/Ghost/Border Width,FLOAT,--ds-chip-error-ghost-border-width,public,
+Component Tokens,Atoms/Chip/Primary/Fill/Border Width,FLOAT,--ds-chip-primary-fill-border-width,public,
+Component Tokens,Atoms/Chip/Primary/Ghost/Border Width,FLOAT,--ds-chip-primary-ghost-border-width,public,
+Component Tokens,Atoms/Chip/Success/Fill/Border Width,FLOAT,--ds-chip-success-fill-border-width,public,
+Component Tokens,Atoms/Chip/Success/Ghost/Border Width,FLOAT,--ds-chip-success-ghost-border-width,public,
+Component Tokens,Background/Card,COLOR,--ds-color-background-card,public,var(--color-background-card)
+Component Tokens,Background/Page,COLOR,--ds-color-background-page,public,var(--color-background-page)
+Component Tokens,Border/Default,COLOR,--ds-color-border-default,public,var(--color-border-default)
+Component Tokens,Border/Focus,COLOR,--ds-color-border-focus,public,var(--color-border-focus)
+Component Tokens,Border/Strong,COLOR,--ds-color-border-strong,public,var(--color-border-strong)
+Component Tokens,Border/Subtle,COLOR,--ds-color-border-subtle,public,var(--color-border-subtle)
+Component Tokens,Atoms/Button/Active-Menu-BG,COLOR,--ds-color-button-active-menu-bg,public,var(--color-interactive-active-menu-bg)
+Component Tokens,Atoms/Button/Active-Menu-Text,COLOR,--ds-color-button-active-menu-text,public,var(--color-interactive-active-menu-text)
+Component Tokens,Atoms/Button/Neutral/Fill/Border,COLOR,--ds-color-button-neutral-fill-border,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Neutral/Fill/Border-Hover,COLOR,--ds-color-button-neutral-fill-border-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Neutral/Fill/Fill,COLOR,--ds-color-button-neutral-fill-fill,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Neutral/Fill/Fill-Hover,COLOR,--ds-color-button-neutral-fill-fill-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Neutral/Fill/Text,COLOR,--ds-color-button-neutral-fill-text,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Neutral/Fill/Text-Hover,COLOR,--ds-color-button-neutral-fill-text-hover,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Neutral/Ghost/Border,COLOR,--ds-color-button-neutral-ghost-border,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Neutral/Ghost/Border-Hover,COLOR,--ds-color-button-neutral-ghost-border-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Neutral/Ghost/Fill,COLOR,--ds-color-button-neutral-ghost-fill,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Neutral/Ghost/Fill-Hover,COLOR,--ds-color-button-neutral-ghost-fill-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Neutral/Ghost/Text,COLOR,--ds-color-button-neutral-ghost-text,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Neutral/Ghost/Text-Hover,COLOR,--ds-color-button-neutral-ghost-text-hover,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Primary/Fill/Border,COLOR,--ds-color-button-primary-fill-border,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Primary/Fill/Border-Hover,COLOR,--ds-color-button-primary-fill-border-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Primary/Fill/Fill,COLOR,--ds-color-button-primary-fill-fill,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Primary/Fill/Fill-Hover,COLOR,--ds-color-button-primary-fill-fill-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Primary/Fill/Text,COLOR,--ds-color-button-primary-fill-text,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Primary/Fill/Text-Hover,COLOR,--ds-color-button-primary-fill-text-hover,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Primary/Ghost/Border,COLOR,--ds-color-button-primary-ghost-border,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Primary/Ghost/Border-Hover,COLOR,--ds-color-button-primary-ghost-border-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Primary/Ghost/Fill,COLOR,--ds-color-button-primary-ghost-fill,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Primary/Ghost/Fill-Hover,COLOR,--ds-color-button-primary-ghost-fill-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Primary/Ghost/Text,COLOR,--ds-color-button-primary-ghost-text,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Primary/Ghost/Text-Hover,COLOR,--ds-color-button-primary-ghost-text-hover,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Secondary/Fill/Border,COLOR,--ds-color-button-secondary-fill-border,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Secondary/Fill/Border-Hover,COLOR,--ds-color-button-secondary-fill-border-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Secondary/Fill/Fill,COLOR,--ds-color-button-secondary-fill-fill,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Secondary/Fill/Fill-Hover,COLOR,--ds-color-button-secondary-fill-fill-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Secondary/Fill/Text,COLOR,--ds-color-button-secondary-fill-text,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Secondary/Fill/Text-Hover,COLOR,--ds-color-button-secondary-fill-text-hover,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Secondary/Ghost/Border,COLOR,--ds-color-button-secondary-ghost-border,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Secondary/Ghost/Border-Hover,COLOR,--ds-color-button-secondary-ghost-border-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Secondary/Ghost/Fill,COLOR,--ds-color-button-secondary-ghost-fill,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Secondary/Ghost/Fill-Hover,COLOR,--ds-color-button-secondary-ghost-fill-hover,public,var(--color-interactive-primary-hover)
+Component Tokens,Atoms/Button/Secondary/Ghost/Text,COLOR,--ds-color-button-secondary-ghost-text,public,var(--color-interactive-primary)
+Component Tokens,Atoms/Button/Secondary/Ghost/Text-Hover,COLOR,--ds-color-button-secondary-ghost-text-hover,public,var(--color-interactive-primary)
+Component Tokens,Card-Stat/Background,COLOR,--ds-color-card-stat-background,public,var(--color-card-stat-background)
+Component Tokens,Card-Stat/Background-Accent,COLOR,--ds-color-card-stat-background-accent,public,var(--color-card-stat-background-accent)
+Component Tokens,Card-Stat/Change-Negative,COLOR,--ds-color-card-stat-change-negative,public,var(--color-card-stat-change-negative)
+Component Tokens,Card-Stat/Change-Positive,COLOR,--ds-color-card-stat-change-positive,public,var(--color-card-stat-change-positive)
+Component Tokens,Card-Stat/Icon,COLOR,--ds-color-card-stat-icon,public,var(--color-card-stat-icon)
+Component Tokens,Card-Stat/Icon-BG,COLOR,--ds-color-card-stat-icon-bg,public,var(--color-card-stat-icon-bg)
+Component Tokens,Card-Stat/Title,COLOR,--ds-color-card-stat-title,public,var(--color-card-stat-title)
+Component Tokens,Card-Stat/Value,COLOR,--ds-color-card-stat-value,public,var(--color-card-stat-value)
+Component Tokens,Chart/Accent,COLOR,--ds-color-chart-accent,public,var(--color-chart-accent)
+Component Tokens,Chart/Area-Fill,COLOR,--ds-color-chart-area-fill,public,var(--color-chart-area-fill)
+Component Tokens,Chart/Bar-Dark,COLOR,--ds-color-chart-bar-dark,public,var(--color-chart-bar-dark)
+Component Tokens,Chart/Bar-Medium,COLOR,--ds-color-chart-bar-medium,public,var(--color-chart-bar-medium)
+Component Tokens,Chart/Grid-Line,COLOR,--ds-color-chart-grid-line,public,var(--color-chart-grid-line)
+Component Tokens,Chart/Label,COLOR,--ds-color-chart-label,public,var(--color-chart-label)
+Component Tokens,Chart/Primary,COLOR,--ds-color-chart-primary,public,var(--color-chart-primary)
+Component Tokens,Chart/Secondary,COLOR,--ds-color-chart-secondary,public,var(--color-chart-secondary)
+Component Tokens,Chart/Tertiary,COLOR,--ds-color-chart-tertiary,public,var(--color-chart-tertiary)
+Component Tokens,Atoms/Chip/Error/Fill/Border,COLOR,--ds-color-chip-error-fill-border,public,
+Component Tokens,Atoms/Chip/Error/Fill/Fill,COLOR,--ds-color-chip-error-fill-fill,public,
+Component Tokens,Atoms/Chip/Error/Fill/Text,COLOR,--ds-color-chip-error-fill-text,public,
+Component Tokens,Atoms/Chip/Error/Ghost/Border,COLOR,--ds-color-chip-error-ghost-border,public,
+Component Tokens,Atoms/Chip/Error/Ghost/Fill,COLOR,--ds-color-chip-error-ghost-fill,public,
+Component Tokens,Atoms/Chip/Error/Ghost/Text,COLOR,--ds-color-chip-error-ghost-text,public,
+Component Tokens,Atoms/Chip/Primary/Fill/Border,COLOR,--ds-color-chip-primary-fill-border,public,
+Component Tokens,Atoms/Chip/Primary/Fill/Fill,COLOR,--ds-color-chip-primary-fill-fill,public,
+Component Tokens,Atoms/Chip/Primary/Fill/Text,COLOR,--ds-color-chip-primary-fill-text,public,
+Component Tokens,Atoms/Chip/Primary/Ghost/Border,COLOR,--ds-color-chip-primary-ghost-border,public,
+Component Tokens,Atoms/Chip/Primary/Ghost/Fill,COLOR,--ds-color-chip-primary-ghost-fill,public,
+Component Tokens,Atoms/Chip/Primary/Ghost/Text,COLOR,--ds-color-chip-primary-ghost-text,public,
+Component Tokens,Atoms/Chip/Success/Fill/Border,COLOR,--ds-color-chip-success-fill-border,public,
+Component Tokens,Atoms/Chip/Success/Fill/Fill,COLOR,--ds-color-chip-success-fill-fill,public,
+Component Tokens,Atoms/Chip/Success/Fill/Text,COLOR,--ds-color-chip-success-fill-text,public,
+Component Tokens,Atoms/Chip/Success/Ghost/Border,COLOR,--ds-color-chip-success-ghost-border,public,
+Component Tokens,Atoms/Chip/Success/Ghost/Fill,COLOR,--ds-color-chip-success-ghost-fill,public,
+Component Tokens,Atoms/Chip/Success/Ghost/Text,COLOR,--ds-color-chip-success-ghost-text,public,
+Component Tokens,Information/Disabled,COLOR,--ds-color-information-disabled,public,var(--color-information-disabled)
+Component Tokens,Information/Heading,COLOR,--ds-color-information-heading,public,var(--color-information-heading)
+Component Tokens,Information/Link,COLOR,--ds-color-information-link,public,var(--color-information-link)
+Component Tokens,Information/Muted,COLOR,--ds-color-information-muted,public,var(--color-information-muted)
+Component Tokens,Information/On-Highlighted,COLOR,--ds-color-information-on-highlighted,public,var(--color-information-on-highlighted)
+Component Tokens,Information/Primary,COLOR,--ds-color-information-primary,public,var(--color-information-primary)
+Component Tokens,Information/Secondary,COLOR,--ds-color-information-secondary,public,var(--color-information-secondary)
+Component Tokens,Information/Tertiary,COLOR,--ds-color-information-tertiary,public,var(--color-information-tertiary)
+Component Tokens,Atoms/Input Field/Border,COLOR,--ds-color-input-field-border,public,var(--color-layer-layer-3)
+Component Tokens,Atoms/Input Field/Default,COLOR,--ds-color-input-field-default,public,var(--color-layer-layer-1)
+Component Tokens,Atoms/Input Field/Disabled,COLOR,--ds-color-input-field-disabled,public,var(--color-layer-layer-1)
+Component Tokens,Atoms/Input Field/Error,COLOR,--ds-color-input-field-error,public,var(--color-layer-layer-3)
+Component Tokens,Atoms/Input Field/Hover,COLOR,--ds-color-input-field-hover,public,var(--color-layer-layer-2)
+Component Tokens,Atoms/Input Field/Text/Disabled,COLOR,--ds-color-input-field-text-disabled,public,
+Component Tokens,Atoms/Input Field/Text/Enabled,COLOR,--ds-color-input-field-text-enabled,public,
+Component Tokens,Layer/Highlighted/Default,COLOR,--ds-color-layer-highlighted-default,public,var(--color-layer-highlighted-default)
+Component Tokens,Layer/Highlighted/Subtle,COLOR,--ds-color-layer-highlighted-subtle,public,var(--color-layer-highlighted-subtle)
+Component Tokens,Layer/Layer 1,COLOR,--ds-color-layer-layer-1,public,var(--color-layer-layer-1)
+Component Tokens,Layer/Layer 2,COLOR,--ds-color-layer-layer-2,public,var(--color-layer-layer-2)
+Component Tokens,Layer/Layer 3,COLOR,--ds-color-layer-layer-3,public,var(--color-layer-layer-3)
+Component Tokens,Notification/Badge,COLOR,--ds-color-notification-badge,public,var(--color-notification-badge)
+Component Tokens,Notification/Badge-Text,COLOR,--ds-color-notification-badge-text,public,var(--color-notification-badge-text)
+Component Tokens,Atoms/Radio & Check/Border,COLOR,--ds-color-radio-and-check-border,public,
+Component Tokens,Atoms/Radio & Check/Fill,COLOR,--ds-color-radio-and-check-fill,public,
+Component Tokens,Atoms/Radio & Check/Selected Fill,COLOR,--ds-color-radio-and-check-selected-fill,public,
+Component Tokens,Atoms/Radio & Check/Text,COLOR,--ds-color-radio-and-check-text,public,
+Component Tokens,Search/Background,COLOR,--ds-color-search-background,public,var(--color-search-background)
+Component Tokens,Search/Border,COLOR,--ds-color-search-border,public,var(--color-search-border)
+Component Tokens,Search/Icon,COLOR,--ds-color-search-icon,public,var(--color-search-icon)
+Component Tokens,Search/Placeholder,COLOR,--ds-color-search-placeholder,public,var(--color-search-placeholder)
+Component Tokens,Sidebar/Background,COLOR,--ds-color-sidebar-background,public,var(--color-sidebar-background)
+Component Tokens,Sidebar/Promo-Gradient-End,COLOR,--ds-color-sidebar-promo-gradient-end,public,var(--color-sidebar-promo-gradient-end)
+Component Tokens,Sidebar/Promo-Gradient-Start,COLOR,--ds-color-sidebar-promo-gradient-start,public,var(--color-sidebar-promo-gradient-start)
+Component Tokens,Sidebar/Tab/Active,COLOR,--ds-color-sidebar-tab-active,public,var(--color-sidebar-text)
+Component Tokens,Sidebar/Tab/Active-Hover,COLOR,--ds-color-sidebar-tab-active-hover,public,var(--color-sidebar-text)
+Component Tokens,Sidebar/Tab/Active-Text,COLOR,--ds-color-sidebar-tab-active-text,public,var(--color-sidebar-text)
+Component Tokens,Sidebar/Tab/Inactive,COLOR,--ds-color-sidebar-tab-inactive,public,var(--color-sidebar-text)
+Component Tokens,Sidebar/Tab/Inactive-Hover,COLOR,--ds-color-sidebar-tab-inactive-hover,public,var(--color-sidebar-text)
+Component Tokens,Sidebar/Tab/Inactive-Text,COLOR,--ds-color-sidebar-tab-inactive-text,public,var(--color-sidebar-text)
+Component Tokens,Sidebar/Text-Active,COLOR,--ds-color-sidebar-text-active,public,var(--color-sidebar-text-active)
+Component Tokens,Status/Error,COLOR,--ds-color-status-error,public,var(--color-status-error)
+Component Tokens,Status/Error-Subtle,COLOR,--ds-color-status-error-subtle,public,var(--color-status-error-subtle)
+Component Tokens,Status/Info,COLOR,--ds-color-status-info,public,var(--color-status-info)
+Component Tokens,Status/Info-Subtle,COLOR,--ds-color-status-info-subtle,public,var(--color-status-info-subtle)
+Component Tokens,Status/Success,COLOR,--ds-color-status-success,public,var(--color-status-success)
+Component Tokens,Status/Success-Subtle,COLOR,--ds-color-status-success-subtle,public,var(--color-status-success-subtle)
+Component Tokens,Status/Warning,COLOR,--ds-color-status-warning,public,var(--color-status-warning)
+Component Tokens,Status/Warning-Subtle,COLOR,--ds-color-status-warning-subtle,public,var(--color-status-warning-subtle)
+Component Tokens,Atoms/Input Field/Border Width,FLOAT,--ds-input-field-border-width,public,
+Component Tokens,Atoms/Radio & Check/Border Width,FLOAT,--ds-radio-and-check-border-width,public,
+Screen Size Switch,Atoms/Buttons/Large/Spacing/Border Radius,FLOAT,--ds-buttons-large-spacing-border-radius,public,
+Screen Size Switch,Atoms/Buttons/Large/Spacing/Equal,FLOAT,--ds-buttons-large-spacing-equal,public,
+Screen Size Switch,Atoms/Buttons/Large/Spacing/Focus Radius,FLOAT,--ds-buttons-large-spacing-focus-radius,public,
+Screen Size Switch,Atoms/Buttons/Large/Spacing/Gap,FLOAT,--ds-buttons-large-spacing-gap,public,
+Screen Size Switch,Atoms/Buttons/Large/Spacing/Horizontal,FLOAT,--ds-buttons-large-spacing-horizontal,public,
+Screen Size Switch,Atoms/Buttons/Large/Spacing/Icon Size,FLOAT,--ds-buttons-large-spacing-icon-size,public,
+Screen Size Switch,Atoms/Buttons/Large/Spacing/Vertical,FLOAT,--ds-buttons-large-spacing-vertical,public,
+Screen Size Switch,Atoms/Buttons/Large/Typography/Font Family,STRING,--ds-buttons-large-typography-font-family,public,
+Screen Size Switch,Atoms/Buttons/Large/Typography/Font Size,FLOAT,--ds-buttons-large-typography-font-size,public,
+Screen Size Switch,Atoms/Buttons/Large/Typography/Font Weight,FLOAT,--ds-buttons-large-typography-font-weight,public,
+Screen Size Switch,Atoms/Buttons/Small/Spacing/Border Radius,FLOAT,--ds-buttons-small-spacing-border-radius,public,
+Screen Size Switch,Atoms/Buttons/Small/Spacing/Equal,FLOAT,--ds-buttons-small-spacing-equal,public,
+Screen Size Switch,Atoms/Buttons/Small/Spacing/Focus Radius,FLOAT,--ds-buttons-small-spacing-focus-radius,public,
+Screen Size Switch,Atoms/Buttons/Small/Spacing/Gap,FLOAT,--ds-buttons-small-spacing-gap,public,
+Screen Size Switch,Atoms/Buttons/Small/Spacing/Horizontal,FLOAT,--ds-buttons-small-spacing-horizontal,public,
+Screen Size Switch,Atoms/Buttons/Small/Spacing/Icon Size,FLOAT,--ds-buttons-small-spacing-icon-size,public,
+Screen Size Switch,Atoms/Buttons/Small/Spacing/Vertical,FLOAT,--ds-buttons-small-spacing-vertical,public,
+Screen Size Switch,Atoms/Buttons/Small/Typography/Font Family,STRING,--ds-buttons-small-typography-font-family,public,
+Screen Size Switch,Atoms/Buttons/Small/Typography/Font Size,FLOAT,--ds-buttons-small-typography-font-size,public,
+Screen Size Switch,Atoms/Buttons/Small/Typography/Font Weight,FLOAT,--ds-buttons-small-typography-font-weight,public,
+Screen Size Switch,Chart/Plot-Min-Width,FLOAT,--ds-chart-plot-min-width,public,
+Screen Size Switch,Atoms/Chip/Spacing/Border Radius,FLOAT,--ds-chip-spacing-border-radius,public,
+Screen Size Switch,Atoms/Chip/Spacing/Gap,FLOAT,--ds-chip-spacing-gap,public,
+Screen Size Switch,Atoms/Chip/Spacing/Horizontal,FLOAT,--ds-chip-spacing-horizontal,public,
+Screen Size Switch,Atoms/Chip/Spacing/Icon Size,FLOAT,--ds-chip-spacing-icon-size,public,
+Screen Size Switch,Atoms/Chip/Spacing/Vertical,FLOAT,--ds-chip-spacing-vertical,public,
+Screen Size Switch,Atoms/Chip/Typography/Font Family,STRING,--ds-chip-typography-font-family,public,
+Screen Size Switch,Atoms/Chip/Typography/Font Size,FLOAT,--ds-chip-typography-font-size,public,
+Screen Size Switch,Atoms/Chip/Typography/Font Weight,FLOAT,--ds-chip-typography-font-weight,public,
+Screen Size Switch,Dashboard/Central/Padding/Gap,FLOAT,--ds-dashboard-central-padding-gap,public,
+Screen Size Switch,Dashboard/Central/Padding/Horizontal,FLOAT,--ds-dashboard-central-padding-horizontal,public,
+Screen Size Switch,Dashboard/Central/Padding/Vertical,FLOAT,--ds-dashboard-central-padding-vertical,public,
+Screen Size Switch,Dashboard/Central/Section/Gap/Default,FLOAT,--ds-dashboard-central-section-gap-default,public,
+Screen Size Switch,Dashboard/Central/Section/Gap/S,FLOAT,--ds-dashboard-central-section-gap-s,public,
+Screen Size Switch,Dashboard/Central/Section/Gap/XS,FLOAT,--ds-dashboard-central-section-gap-xs,public,
+Screen Size Switch,Dashboard/Central/Section/Padding,FLOAT,--ds-dashboard-central-section-padding,public,
+Screen Size Switch,Dashboard/Side Nav/Gap,FLOAT,--ds-dashboard-side-nav-gap,public,
+Screen Size Switch,Dashboard/Side Nav/Item/Gap,FLOAT,--ds-dashboard-side-nav-item-gap,public,
+Screen Size Switch,Dashboard/Side Nav/Padding/Horizontal,FLOAT,--ds-dashboard-side-nav-padding-horizontal,public,
+Screen Size Switch,Dashboard/Side Nav/Padding/Vertical,FLOAT,--ds-dashboard-side-nav-padding-vertical,public,
+Screen Size Switch,Dashboard/Top Nav/Button/Gap,FLOAT,--ds-dashboard-top-nav-button-gap,public,
+Screen Size Switch,Dashboard/Top Nav/Gap,FLOAT,--ds-dashboard-top-nav-gap,public,
+Screen Size Switch,Dashboard/Top Nav/Padding/Horizontal,FLOAT,--ds-dashboard-top-nav-padding-horizontal,public,
+Screen Size Switch,Dashboard/Top Nav/Padding/Vertical,FLOAT,--ds-dashboard-top-nav-padding-vertical,public,
+Screen Size Switch,Desktop 1,BOOLEAN,--ds-desktop-1,public,
+Screen Size Switch,Atoms/Input Field/Helper text/Font Family,STRING,--ds-input-field-helper-text-font-family,public,
+Screen Size Switch,Atoms/Input Field/Helper text/Font Size,FLOAT,--ds-input-field-helper-text-font-size,public,
+Screen Size Switch,Atoms/Input Field/Helper text/Font Weight,FLOAT,--ds-input-field-helper-text-font-weight,public,
+Screen Size Switch,Atoms/Input Field/Helper text/Spacing 2/Border Radius,FLOAT,--ds-input-field-helper-text-spacing-2-border-radius,public,
+Screen Size Switch,Atoms/Input Field/Helper text/Spacing 2/Gap,FLOAT,--ds-input-field-helper-text-spacing-2-gap,public,
+Screen Size Switch,Atoms/Input Field/Helper text/Spacing 2/Horizontal,FLOAT,--ds-input-field-helper-text-spacing-2-horizontal,public,
+Screen Size Switch,Atoms/Input Field/Helper text/Spacing 2/Icon Size,FLOAT,--ds-input-field-helper-text-spacing-2-icon-size,public,
+Screen Size Switch,Atoms/Input Field/Helper text/Spacing 2/Vertical,FLOAT,--ds-input-field-helper-text-spacing-2-vertical,public,
+Screen Size Switch,Atoms/Input Field/Label/Font Family,STRING,--ds-input-field-label-font-family,public,
+Screen Size Switch,Atoms/Input Field/Label/Font Size,FLOAT,--ds-input-field-label-font-size,public,
+Screen Size Switch,Atoms/Input Field/Label/Font Weight,FLOAT,--ds-input-field-label-font-weight,public,
+Screen Size Switch,Atoms/Input Field/Label/Spacing/Border Radius,FLOAT,--ds-input-field-label-spacing-border-radius,public,
+Screen Size Switch,Atoms/Input Field/Label/Spacing/Gap,FLOAT,--ds-input-field-label-spacing-gap,public,
+Screen Size Switch,Atoms/Input Field/Label/Spacing/Horizontal,FLOAT,--ds-input-field-label-spacing-horizontal,public,
+Screen Size Switch,Atoms/Input Field/Label/Spacing/Icon Size,FLOAT,--ds-input-field-label-spacing-icon-size,public,
+Screen Size Switch,Atoms/Input Field/Label/Spacing/Vertical,FLOAT,--ds-input-field-label-spacing-vertical,public,
+Screen Size Switch,Atoms/Input Field/Place Holder/Font Family,STRING,--ds-input-field-place-holder-font-family,public,
+Screen Size Switch,Atoms/Input Field/Place Holder/Font Size,FLOAT,--ds-input-field-place-holder-font-size,public,
+Screen Size Switch,Atoms/Input Field/Place Holder/Font Weight,FLOAT,--ds-input-field-place-holder-font-weight,public,
+Screen Size Switch,Atoms/Input Field/Place Holder/Spacing 2/Border Radius,FLOAT,--ds-input-field-place-holder-spacing-2-border-radius,public,
+Screen Size Switch,Atoms/Input Field/Place Holder/Spacing 2/Gap,FLOAT,--ds-input-field-place-holder-spacing-2-gap,public,
+Screen Size Switch,Atoms/Input Field/Place Holder/Spacing 2/Horizontal,FLOAT,--ds-input-field-place-holder-spacing-2-horizontal,public,
+Screen Size Switch,Atoms/Input Field/Place Holder/Spacing 2/Icon Size,FLOAT,--ds-input-field-place-holder-spacing-2-icon-size,public,
+Screen Size Switch,Atoms/Input Field/Place Holder/Spacing 2/Vertical,FLOAT,--ds-input-field-place-holder-spacing-2-vertical,public,
+Screen Size Switch,Mobile 1,BOOLEAN,--ds-mobile-1,public,
+Screen Size Switch,Page/Gap,FLOAT,--ds-page-gap,public,
+Screen Size Switch,Page/Padding/Bottom,FLOAT,--ds-page-padding-bottom,public,
+Screen Size Switch,Page/Padding/Horizontal,FLOAT,--ds-page-padding-horizontal,public,
+Screen Size Switch,Page/Padding/Top,FLOAT,--ds-page-padding-top,public,
+Screen Size Switch,Presentation,FLOAT,--ds-presentation,public,
+Screen Size Switch,Atoms/Radio & Check/Spacing/Border Radius/Check,FLOAT,--ds-radio-and-check-spacing-border-radius-check,public,
+Screen Size Switch,Atoms/Radio & Check/Spacing/Border Radius/Radio,FLOAT,--ds-radio-and-check-spacing-border-radius-radio,public,
+Screen Size Switch,Atoms/Radio & Check/Spacing/Gap,FLOAT,--ds-radio-and-check-spacing-gap,public,
+Screen Size Switch,Atoms/Radio & Check/Spacing/Horizontal,FLOAT,--ds-radio-and-check-spacing-horizontal,public,
+Screen Size Switch,Atoms/Radio & Check/Spacing/Size,FLOAT,--ds-radio-and-check-spacing-size,public,
+Screen Size Switch,Atoms/Radio & Check/Spacing/Vertical,FLOAT,--ds-radio-and-check-spacing-vertical,public,
+Screen Size Switch,Atoms/Radio & Check/Typography/Font Family,STRING,--ds-radio-and-check-typography-font-family,public,
+Screen Size Switch,Atoms/Radio & Check/Typography/Font Size,FLOAT,--ds-radio-and-check-typography-font-size,public,
+Screen Size Switch,Atoms/Radio & Check/Typography/Font Weight,FLOAT,--ds-radio-and-check-typography-font-weight,public,
+Screen Size Switch,Screen,STRING,--ds-screen,public,
+Screen Size Switch,Screen Minimum Height,FLOAT,--ds-screen-minimum-height,public,
+Screen Size Switch,Screen Width Max,FLOAT,--ds-screen-width-max,public,
+Screen Size Switch,Screen Width Min,FLOAT,--ds-screen-width-min,public,
+Screen Size Switch,Section/Corner Radius,FLOAT,--ds-section-corner-radius,public,
+Screen Size Switch,Section/Gap,FLOAT,--ds-section-gap,public,
+Screen Size Switch,Section/List/Gap,FLOAT,--ds-section-list-gap,public,
+Screen Size Switch,Section/List/Gap-item,FLOAT,--ds-section-list-gap-item,public,
+Screen Size Switch,Section/Maximum Width,FLOAT,--ds-section-maximum-width,public,
+Screen Size Switch,Section/Min-Width/Full,FLOAT,--ds-section-min-width-full,public,
+Screen Size Switch,Section/Min-Width/Half,FLOAT,--ds-section-min-width-half,public,
+Screen Size Switch,Section/Min-Width/Quarter,FLOAT,--ds-section-min-width-quarter,public,
+Screen Size Switch,Section/Min-Width/Third,FLOAT,--ds-section-min-width-third,public,
+Screen Size Switch,Section/Padding,FLOAT,--ds-section-padding,public,
+Screen Size Switch,Section/Title/Default,FLOAT,--ds-section-title-default,public,
+Screen Size Switch,Section/Title/S,FLOAT,--ds-section-title-s,public,
+Screen Size Switch,Section/Title/XS,FLOAT,--ds-section-title-xs,public,
+Screen Size Switch,Table/Min-Width/Default,FLOAT,--ds-table-min-width-default,public,
+Screen Size Switch,Typography/Text Styles/Body/Font Family,STRING,--ds-text-body-font-family,public,var(--text-body-font-family)
+Screen Size Switch,Typography/Text Styles/Body/Size/L,FLOAT,--ds-text-body-size-l,public,var(--text-body-size-l)
+Screen Size Switch,Typography/Text Styles/Body/Size/M,FLOAT,--ds-text-body-size-m,public,var(--text-body-size-m)
+Screen Size Switch,Typography/Text Styles/Body/Size/S,FLOAT,--ds-text-body-size-s,public,var(--text-body-size-s)
+Screen Size Switch,Typography/Text Styles/Body/Size/XL,FLOAT,--ds-text-body-size-xl,public,var(--text-body-size-xl)
+Screen Size Switch,Typography/Text Styles/Body/Size/XS,FLOAT,--ds-text-body-size-xs,public,var(--text-body-size-xs)
+Screen Size Switch,Typography/Text Styles/Body/Weight/Default,FLOAT,--ds-text-body-weight-default,public,var(--text-body-weight-default)
+Screen Size Switch,Typography/Text Styles/Body/Weight/Medium,FLOAT,--ds-text-body-weight-medium,public,
+Screen Size Switch,Typography/Text Styles/Body/Weight/Thick,FLOAT,--ds-text-body-weight-thick,public,
+Screen Size Switch,Typography/Text Styles/Body/Weight/Thin,FLOAT,--ds-text-body-weight-thin,public,
+Screen Size Switch,Typography/Text Styles/Heading/Font Family,STRING,--ds-text-heading-font-family,public,var(--text-heading-font-family)
+Screen Size Switch,Typography/Text Styles/Heading/Size/L,FLOAT,--ds-text-heading-size-l,public,var(--text-heading-size-l)
+Screen Size Switch,Typography/Text Styles/Heading/Size/M,FLOAT,--ds-text-heading-size-m,public,var(--text-heading-size-m)
+Screen Size Switch,Typography/Text Styles/Heading/Size/S,FLOAT,--ds-text-heading-size-s,public,var(--text-heading-size-s)
+Screen Size Switch,Typography/Text Styles/Heading/Size/XL,FLOAT,--ds-text-heading-size-xl,public,var(--text-heading-size-xl)
+Screen Size Switch,Typography/Text Styles/Heading/Size/XS,FLOAT,--ds-text-heading-size-xs,public,var(--text-heading-size-xs)
+Screen Size Switch,Typography/Text Styles/Heading/Weight/Medium,FLOAT,--ds-text-heading-weight-medium,public,
+Screen Size Switch,Typography/Text Styles/Heading/Weight/Thick,FLOAT,--ds-text-heading-weight-thick,public,
+Screen Size Switch,Typography/Text Styles/Heading/Weight/Thin,FLOAT,--ds-text-heading-weight-thin,public,
+Screen Size Switch,Typography/Text Styles/Label/Font Family,STRING,--ds-text-label-font-family,public,var(--text-label-font-family)
+Screen Size Switch,Typography/Text Styles/Label/Size/L,FLOAT,--ds-text-label-size-l,public,var(--text-label-size-l)
+Screen Size Switch,Typography/Text Styles/Label/Size/M,FLOAT,--ds-text-label-size-m,public,var(--text-label-size-m)
+Screen Size Switch,Typography/Text Styles/Label/Size/S,FLOAT,--ds-text-label-size-s,public,var(--text-label-size-s)
+Screen Size Switch,Typography/Text Styles/Label/Size/XL,FLOAT,--ds-text-label-size-xl,public,var(--text-label-size-xl)
+Screen Size Switch,Typography/Text Styles/Label/Size/XS,FLOAT,--ds-text-label-size-xs,public,var(--text-label-size-xs)
+Screen Size Switch,Typography/Text Styles/Label/Weight/Medium,FLOAT,--ds-text-label-weight-medium,public,
+Screen Size Switch,Typography/Text Styles/Label/Weight/Thick,FLOAT,--ds-text-label-weight-thick,public,
+Screen Size Switch,Typography/Text Styles/Label/Weight/Thin,FLOAT,--ds-text-label-weight-thin,public,
+Raw Spacing Values,S%50,FLOAT,--ds-space-0_5,public,
+Raw Spacing Values,S1,FLOAT,--ds-space-1,public,
+Raw Spacing Values,S10,FLOAT,--ds-space-10,public,
+Raw Spacing Values,S12,FLOAT,--ds-space-12,public,
+Raw Spacing Values,S14,FLOAT,--ds-space-14,public,
+Raw Spacing Values,S16,FLOAT,--ds-space-16,public,
+Raw Spacing Values,S18,FLOAT,--ds-space-18,public,
+Raw Spacing Values,S1%50,FLOAT,--ds-space-1_5,public,
+Raw Spacing Values,S2,FLOAT,--ds-space-2,public,
+Raw Spacing Values,S20,FLOAT,--ds-space-20,public,
+Raw Spacing Values,S24,FLOAT,--ds-space-24,public,
+Raw Spacing Values,S28,FLOAT,--ds-space-28,public,
+Raw Spacing Values,S2%50,FLOAT,--ds-space-2_5,public,
+Raw Spacing Values,S3,FLOAT,--ds-space-3,public,
+Raw Spacing Values,S32,FLOAT,--ds-space-32,public,
+Raw Spacing Values,S3%50,FLOAT,--ds-space-3_5,public,
+Raw Spacing Values,S4,FLOAT,--ds-space-4,public,
+Raw Spacing Values,S4%50,FLOAT,--ds-space-4_5,public,
+Raw Spacing Values,S5,FLOAT,--ds-space-5,public,
+Raw Spacing Values,S6,FLOAT,--ds-space-6,public,
+Raw Spacing Values,S7,FLOAT,--ds-space-7,public,
+Raw Spacing Values,S8,FLOAT,--ds-space-8,public,
+Raw Spacing Values,S9,FLOAT,--ds-space-9,public,
+Raw Font Size Values,10,FLOAT,--ds-raw-font-size-10,internal,
+Raw Font Size Values,11,FLOAT,--ds-raw-font-size-11,internal,
+Raw Font Size Values,12,FLOAT,--ds-raw-font-size-12,internal,
+Raw Font Size Values,13,FLOAT,--ds-raw-font-size-13,internal,
+Raw Font Size Values,14,FLOAT,--ds-raw-font-size-14,internal,
+Raw Font Size Values,16,FLOAT,--ds-raw-font-size-16,internal,
+Raw Font Size Values,18,FLOAT,--ds-raw-font-size-18,internal,
+Raw Font Size Values,20,FLOAT,--ds-raw-font-size-20,internal,
+Raw Font Size Values,22,FLOAT,--ds-raw-font-size-22,internal,
+Raw Font Size Values,24,FLOAT,--ds-raw-font-size-24,internal,
+Raw Font Size Values,28,FLOAT,--ds-raw-font-size-28,internal,
+Raw Font Size Values,32,FLOAT,--ds-raw-font-size-32,internal,
+Raw Font Size Values,36,FLOAT,--ds-raw-font-size-36,internal,
+Raw Font Size Values,40,FLOAT,--ds-raw-font-size-40,internal,
+Raw Font Size Values,44,FLOAT,--ds-raw-font-size-44,internal,
+Raw Font Size Values,48,FLOAT,--ds-raw-font-size-48,internal,
+Raw Font Size Values,52,FLOAT,--ds-raw-font-size-52,internal,
+Raw Font Size Values,56,FLOAT,--ds-raw-font-size-56,internal,
+Raw Font Size Values,60,FLOAT,--ds-raw-font-size-60,internal,
+Raw Font Size Values,64,FLOAT,--ds-raw-font-size-64,internal,
+Raw Font Size Values,72,FLOAT,--ds-raw-font-size-72,internal,
+Typography Useable Tokens,Font Family/Primary,STRING,--ds-font-family-primary,internal,var(--font-family-font-family-primary)
+Typography Useable Tokens,Font Family/Secondary,STRING,--ds-font-family-secondary,internal,var(--font-family-secondary)
+Typography Useable Tokens,Font Sizes/10,FLOAT,--ds-font-size-10,internal,var(--font-size-font-sizes-10)
+Typography Useable Tokens,Font Sizes/11,FLOAT,--ds-font-size-11,internal,var(--font-size-font-sizes-11)
+Typography Useable Tokens,Font Sizes/12,FLOAT,--ds-font-size-12,internal,var(--font-size-font-sizes-12)
+Typography Useable Tokens,Font Sizes/13,FLOAT,--ds-font-size-13,internal,var(--font-size-font-sizes-13)
+Typography Useable Tokens,Font Sizes/14,FLOAT,--ds-font-size-14,internal,var(--font-size-font-sizes-14)
+Typography Useable Tokens,Font Sizes/16,FLOAT,--ds-font-size-16,internal,var(--font-size-font-sizes-16)
+Typography Useable Tokens,Font Sizes/18,FLOAT,--ds-font-size-18,internal,var(--font-size-font-sizes-18)
+Typography Useable Tokens,Font Sizes/20,FLOAT,--ds-font-size-20,internal,var(--font-size-font-sizes-20)
+Typography Useable Tokens,Font Sizes/22,FLOAT,--ds-font-size-22,internal,var(--font-size-font-sizes-22)
+Typography Useable Tokens,Font Sizes/24,FLOAT,--ds-font-size-24,internal,var(--font-size-font-sizes-24)
+Typography Useable Tokens,Font Sizes/28,FLOAT,--ds-font-size-28,internal,var(--font-size-font-sizes-28)
+Typography Useable Tokens,Font Sizes/32,FLOAT,--ds-font-size-32,internal,var(--font-size-font-sizes-32)
+Typography Useable Tokens,Font Sizes/36,FLOAT,--ds-font-size-36,internal,var(--font-size-font-sizes-36)
+Typography Useable Tokens,Font Sizes/40,FLOAT,--ds-font-size-40,internal,var(--font-size-font-sizes-40)
+Typography Useable Tokens,Font Sizes/44,FLOAT,--ds-font-size-44,internal,var(--font-size-font-sizes-44)
+Typography Useable Tokens,Font Sizes/48,FLOAT,--ds-font-size-48,internal,var(--font-size-font-sizes-48)
+Typography Useable Tokens,Font Sizes/52,FLOAT,--ds-font-size-52,internal,var(--font-size-font-sizes-52)
+Typography Useable Tokens,Font Sizes/56,FLOAT,--ds-font-size-56,internal,var(--font-size-font-sizes-56)
+Typography Useable Tokens,Font Sizes/60,FLOAT,--ds-font-size-60,internal,var(--font-size-font-sizes-60)
+Typography Useable Tokens,Font Sizes/64,FLOAT,--ds-font-size-64,internal,var(--font-size-font-sizes-64)
+Typography Useable Tokens,Font Sizes/72,FLOAT,--ds-font-size-72,internal,var(--font-size-font-sizes-64)
+Typography Useable Tokens,Font Weights/Black,FLOAT,--ds-font-weight-black,internal,var(--font-weight-font-weights-black)
+Typography Useable Tokens,Font Weights/Bold,FLOAT,--ds-font-weight-bold,internal,var(--font-weight-font-weights-bold)
+Typography Useable Tokens,Font Weights/ExtraBold,FLOAT,--ds-font-weight-extrabold,internal,var(--font-weight-font-weights-extrabold)
+Typography Useable Tokens,Font Weights/ExtraLight,FLOAT,--ds-font-weight-extralight,internal,var(--font-weight-font-weights-extralight)
+Typography Useable Tokens,Font Weights/Light,FLOAT,--ds-font-weight-light,internal,var(--font-weight-font-weights-light)
+Typography Useable Tokens,Font Weights/Medium,FLOAT,--ds-font-weight-medium,internal,var(--font-weight-font-weights-medium)
+Typography Useable Tokens,Font Weights/Regular,FLOAT,--ds-font-weight-regular,internal,var(--font-weight-font-weights-regular)
+Typography Useable Tokens,Font Weights/SemiBold,FLOAT,--ds-font-weight-semibold,internal,var(--font-weight-font-weights-semibold)
+Typography Useable Tokens,Font Weights/Thin,FLOAT,--ds-font-weight-thin,internal,var(--font-weight-font-weights-thin)
+Language Switch,Direction,STRING,--ds-language-direction,internal,
+Language Switch,Font Family,STRING,--ds-language-font-family,internal,
+Lanuguage Collection,Roman/Direction,STRING,--ds-script-roman-direction,internal,
+Lanuguage Collection,Roman/Family,STRING,--ds-script-roman-family,internal,
