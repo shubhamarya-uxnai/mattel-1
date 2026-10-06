@@ -35,10 +35,10 @@ Plain HTML, Framer, or anywhere else that takes a `<link>` tag:
 When using the hosted global version, load from jsDelivr:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/design-system@main/dist/tokens.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/design-system@main/dist/type.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/design-system@main/dist/components.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/design-system@main/dist/shadcn.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/mattel-1@main/dist/tokens.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/mattel-1@main/dist/type.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/mattel-1@main/dist/components.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/mattel-1@main/dist/shadcn.css">
 ```
 
 Then use the tokens directly:
@@ -84,8 +84,8 @@ Every property on every atom is checked against Figma directly, every time the b
 In the Framer component's "Design system" field, add:
 
 ```
-https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/design-system@main/dist/tokens.css
-https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/design-system@main/dist/shadcn.css
+https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/mattel-1@main/dist/tokens.css
+https://cdn.jsdelivr.net/gh/shubhamarya-uxnai/mattel-1@main/dist/shadcn.css
 ```
 
 (or `http://localhost:<port>/dist/...` while previewing locally, which the component explicitly allows). It reads exactly the same `--background` / `--card` / `--primary` names this system publishes, and applies on top of the studio's own styles because it loads them last. Set the `dark` prop for dark mode. This was tried directly against the running studio (not just read from source): the studio's own `--background`, `--card`, `--primary`, `--border`, `--ring`, `--radius` and `--font-sans` all switched to this system's Dark, Standard, Cool values the moment the two stylesheets were added, with no other change. See `BUILD_REPORT.md` for the exact before/after values.
